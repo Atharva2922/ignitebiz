@@ -5,80 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>12-Dimension Comprehensive Psychometric Evaluation Test - IgniteBiz AI</title>
   <meta name="description" content="Discover your strengths, understand your mindset, and shape your future with our 12-Dimension Comprehensive Psychometric Evaluation Test. Includes ₹70,000 in bonus resources.">
-  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/webp" href="assets/images/logo.webp?v=5.2">
+  <link rel="stylesheet" href="css/style.css?v=5.2">
+          <!-- Theme Initialization & Instant Toggle Engine -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('ignitebiz_theme');
+      const theme = (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+      if (document.body) document.body.setAttribute('data-theme', theme);
+    })();
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      if (document.body) document.body.setAttribute('data-theme', next);
+      try {
+        localStorage.setItem('ignitebiz_theme', next);
+      } catch (e) {}
+      
+      const isDark = (next === 'dark');
+      document.querySelectorAll('.theme-toggle-btn').forEach(function(btn) {
+        btn.setAttribute('title', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+        btn.setAttribute('aria-label', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+      });
+
+      window.dispatchEvent(new CustomEvent('themechanged', { detail: { theme: next } }));
+    }
+    window.toggleTheme = toggleTheme;
+  </script>
 </head>
 <body>
 
-  <!-- Top Info Bar -->
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar-left">
-        <span class="topbar-item">Official 12-Dimension Scientific Psychometric Test</span>
-        <span class="topbar-item">Fee: ₹990 / $15</span>
-      </div>
-      <div class="topbar-right">
-        <span class="topbar-badge">Includes ₹70,000 ($840) Bonus Package</span>
-        <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="topbar-badge" style="background: rgba(0, 188, 212, 0.2); color: #38bdf8;">Assessment Portal &rarr;</a>
-      </div>
-    </div>
-  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Global Interactive Neural Canvas for All White/Light Backgrounds -->
+  <canvas id="global-neural-canvas" class="global-neural-canvas"></canvas>
 
-  <!-- Header -->
-  <header class="site-header">
+  <!-- Main Navigation Header -->
+        <header class="site-header">
     <div class="container">
       <nav class="navbar">
-        <a href="index.html" class="brand-logo">
-          <img src="assets/images/logo.webp" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'">
+        <a href="index.html" class="brand-logo" aria-label="IgniteBiz AI Home">
+          <div class="brand-logo-img-wrapper">
+            <img src="assets/images/logo.webp?v=5.2" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'">
+          </div>
           <div class="brand-title">
-            <span>IGNITEBIZ AI</span>
-            <span class="brand-subtitle">Business Yoga with AI</span>
+            <span class="brand-name">IGNITEBIZ AI</span>
+            <span class="brand-subtitle"><span class="neural-pulse-dot"></span>Venture Studio</span>
           </div>
         </a>
 
+        <!-- Desktop Navigation Menu (Direct Clean Links - No Dropdown Menus) -->
         <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link active">
-              Psychometric Test
-              <svg class="caret" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
-            </a>
-            <div class="dropdown-menu">
-              <a href="psychometric-12d.html" class="dropdown-item active">12-Dimension Evaluation Test</a>
-              <a href="iris-test.html" class="dropdown-item">Eye 2 I – Iris Analysis Test</a>
-            </div>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              Entrepreneur Track
-              <svg class="caret" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
-            </a>
-            <div class="dropdown-menu">
-              <a href="awards.html" class="dropdown-item">Global Business Innovation Awards</a>
-              <a href="business-mastery.html" class="dropdown-item">Business Mastery with AI</a>
-              <a href="c-suite.html" class="dropdown-item">C-Suite / CXO Services</a>
-              <a href="venture-architect.html" class="dropdown-item">Venture Architect & Strategist</a>
-            </div>
+            <a href="about.html" class="nav-link">About Us</a>
           </li>
-          <li class="nav-item"><a href="investor-partners.html" class="nav-link">Investor Partners</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              Skill Development Track
-              <svg class="caret" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
-            </a>
-            <div class="dropdown-menu">
-              <a href="focus-domain.html" class="dropdown-item">Focus Domain (Skill Track)</a>
-              <a href="ai-life-manager.html" class="dropdown-item">AI Life Manager</a>
-              <a href="ai-general-workshop.html" class="dropdown-item">Agentic AI General Workshop</a>
-            </div>
+            <a href="psychometric-12d.html" class="nav-link active">Discover Yourself</a>
           </li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+          <li class="nav-item">
+            <a href="business-mastery.html" class="nav-link">Build Startup</a>
+          </li>
+          <li class="nav-item">
+            <a href="launch-business.html" class="nav-link">Launch Business</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
         </ul>
 
+        <!-- Right Action Buttons -->
         <div class="nav-actions">
-          <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Login</a>
-          <button class="btn btn-primary btn-sm btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">Start Test</button>
+          <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Light and Dark Mode" title="Toggle Light/Dark Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.3 2a10 10 0 00-1.9.18 1 1 0 00-.79 1.15 1 1 0 001.09.82A8 8 0 0119.8 11.8a1 1 0 00.8 1.08 1 1 0 001.11-.75A10 10 0 0012.3 2zM9.27 4.49a1 1 0 00-.34.78 10 10 0 1010.6 10.6 1 1 0 00-.76-1.12 1 1 0 00-1.18.43A8 8 0 119.27 4.49z"/></svg>
+          </button>
+          <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="btn-nav-login">Login</a>
+          <button class="btn-nav-start" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">
+            <span>🚀 Start Journey</span>
+          </button>
           <button class="hamburger" aria-label="Toggle mobile menu">
             <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
           </button>
@@ -86,6 +102,42 @@
       </nav>
     </div>
   </header>
+
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.webp?v=5.2" alt="IgniteBiz AI Logo" style="height: 36px;">
+        <span style="font-weight: 800; font-size: 1.12rem; color: var(--primary);">IGNITEBIZ AI</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="theme-toggle-btn mobile-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Light and Dark Mode" title="Toggle Light/Dark Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.3 2a10 10 0 00-1.9.18 1 1 0 00-.79 1.15 1 1 0 001.09.82A8 8 0 0119.8 11.8a1 1 0 00.8 1.08 1 1 0 001.11-.75A10 10 0 0012.3 2zM9.27 4.49a1 1 0 00-.34.78 10 10 0 1010.6 10.6 1 1 0 00-.76-1.12 1 1 0 00-1.18.43A8 8 0 119.27 4.49z"/></svg>
+        </button>
+        <button class="close-drawer" aria-label="Close menu">&times;</button>
+      </div>
+    </div>
+    
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">1. Home</a>
+      <a href="about.html" class="mobile-nav-link">2. About Us</a>
+      <a href="psychometric-12d.html" class="mobile-nav-link active">3. Discover Yourself</a>
+      <a href="business-mastery.html" class="mobile-nav-link">4. Build Your Startup</a>
+      <a href="launch-business.html" class="mobile-nav-link">5. Launch Your Business</a>
+      <a href="investor-partners.html" class="mobile-nav-link">6. Funding &amp; Investors</a>
+      <a href="c-suite.html" class="mobile-nav-link">7. Digital CXO Services</a>
+      <a href="global-expansion.html" class="mobile-nav-link">8. Global Expansion</a>
+      <a href="ipo-exits.html" class="mobile-nav-link">9. IPO Readiness</a>
+      <a href="institutional-partners.html" class="mobile-nav-link">10. Institutional Partners</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+
+    <div style="margin-top: auto; padding-top: 24px; border-top: 1px solid var(--gray-200); display: flex; flex-direction: column; gap: 12px;">
+      <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Candidate Login</a>
+      <button class="btn btn-primary" style="width: 100%;" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">Start Your Journey</button>
+    </div>
+  </aside>
 
   <!-- Page Hero -->
   <section class="page-hero">
@@ -97,15 +149,27 @@
         <span>/</span>
         <span>12-Dimension Evaluation</span>
       </div>
-      <h1>12-Dimension Comprehensive Psychometric Evaluation Test</h1>
+      <span class="hero-tag pulse-tag">IGNITEBIZAI &bull; DISCOVER YOURSELF</span>
+      <h1>Know Your Strengths. Choose Your Pathway.</h1>
       <p>
-        A scientific evaluation designed to help you discover your strengths, understand your psychological mindset, and shape a thriving future in entrepreneurship or advanced technology.
+        12-dimension assessment and development plan
       </p>
+      <div class="page-hero-actions">
+        <button class="btn btn-primary btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">
+          <span>🚀 Start My Assessment</span>
+        </button>
+        <a href="#sample-report" class="btn btn-outline btn-round">
+          <span>📊 Explore My Report</span>
+        </a>
+        <a href="#skill-gap" class="btn btn-outline btn-round">
+          <span>🌱 Build My Development Plan</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Overview Section -->
-  <section class="section">
+  <section class="section" id="dimensions">
     <div class="container">
       <div class="dimensions-grid">
         <div>
@@ -129,13 +193,24 @@
             <div class="dimension-badge"><span class="dim-num">11</span> Interpersonal &amp; Team Dynamics</div>
             <div class="dimension-badge"><span class="dim-num">12</span> Organizational Leadership Skills</div>
           </div>
+
+          <div style="margin-top: 24px; background: linear-gradient(135deg, #07112c 0%, #102148 100%); border: 1px solid rgba(0, 188, 212, 0.35); border-radius: var(--radius-lg); padding: 20px 24px; color: #ffffff; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+            <div>
+              <div style="font-size: 0.82rem; color: #38bdf8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Cognitive Neuroscience Mapping</div>
+              <strong style="font-size: 1.05rem; display: block; margin-top: 2px;">12 Dimensions Mapped to Cerebral Cortex &amp; Lobes</strong>
+              <div style="font-size: 0.85rem; color: #94a3b8;">Discover how your Prefrontal, Parietal, and Temporal lobes drive your score.</div>
+            </div>
+            <a href="index.html#brain-explorer" class="btn btn-secondary btn-sm btn-round">
+              <span>🧠 Explore 3D Brain Architecture</span> &rarr;
+            </a>
+          </div>
         </div>
 
         <div>
           <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); border: 4px solid #ffffff;">
             <img src="assets/images/promising-turnout-as-girl-students-flock-college-open-counseling-gurgaon-india.png" alt="Students in counseling" style="width: 100%; height: 360px; object-fit: cover;">
           </div>
-          <div style="margin-top: 24px; background: #ffffff; border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-sm);">
+          <div class="content-box-card" style="margin-top: 24px;">
             <h4 style="margin-bottom: 8px;">Who Is This Test Ideal For?</h4>
             <ul style="color: var(--gray-600); font-size: 0.95rem; line-height: 1.6; list-style: disc; padding-left: 20px;">
               <li>Students seeking subject, stream, and career clarity.</li>
@@ -161,35 +236,197 @@
       </div>
 
       <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-top: 36px;">
-        <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); text-align: center;">
+        <div class="content-box-card" style="text-align: center;">
           <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--primary); color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">1</div>
           <h4 style="font-size: 1rem; margin-bottom: 8px;">Online Sign-up</h4>
           <p style="font-size: 0.85rem; color: var(--gray-500);">Register and provide basic information to activate your assessment portal.</p>
         </div>
 
-        <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); text-align: center;">
+        <div class="content-box-card" style="text-align: center;">
           <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--secondary); color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">2</div>
           <h4 style="font-size: 1rem; margin-bottom: 8px;">Take the Test</h4>
           <p style="font-size: 0.85rem; color: var(--gray-500);">Complete the 12-dimension evaluation online at your convenience (approx. 45-60 min).</p>
         </div>
 
-        <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); text-align: center;">
+        <div class="content-box-card" style="text-align: center;">
           <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--accent-teal); color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">3</div>
           <h4 style="font-size: 1rem; margin-bottom: 8px;">Personalized Report</h4>
           <p style="font-size: 0.85rem; color: var(--gray-500);">Receive immediate detailed analytics on EQ, business acumen, and agility.</p>
         </div>
 
-        <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); text-align: center;">
+        <div class="content-box-card" style="text-align: center;">
           <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--accent-green); color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">4</div>
           <h4 style="font-size: 1rem; margin-bottom: 8px;">Dual-Track Mapping</h4>
-          <p style="font-size: 0.85rem; color: var(--gray-500);">&ge;60% qualifies for Founder Track &amp; Awards; &lt;60% receives job-ready tech training.</p>
+          <p style="font-size: 0.85rem; color: var(--gray-500);">Personalized pathway recommendations (Founder Track or Skill Development) based on comprehensive assessment insights, interests, and goals.</p>
         </div>
 
-        <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); text-align: center;">
+        <div class="content-box-card" style="text-align: center;">
           <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--accent-purple); color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">5</div>
           <h4 style="font-size: 1rem; margin-bottom: 8px;">Handholding</h4>
           <p style="font-size: 0.85rem; color: var(--gray-500);">Ongoing mentorship, incubation linkages, and lifetime access to training manuals.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ==========================================================================
+       SECTION: SAMPLE DIAGNOSTIC REPORT PREVIEW (#sample-report)
+       ========================================================================== -->
+  <section class="section section-alt" id="sample-report">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Illustrative Diagnostic Preview</span>
+        <h2>What Your 12-Dimension Report Looks Like</h2>
+        <p class="section-subtitle">
+          Transparent, actionable, developmental feedback. Clearly labeled sample breakdown of your cognitive execution profile.
+        </p>
+      </div>
+
+      <div style="max-width: 920px; margin: 36px auto 0; background: var(--bg-card); border-radius: var(--radius-xl); padding: 36px; border: 1px solid var(--border-color); box-shadow: var(--shadow-xl);">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; margin-bottom: 24px;">
+          <div>
+            <span class="dropdown-tag" style="background: rgba(40, 104, 232, 0.15); color: #2868e8;">Sample Diagnostic Report</span>
+            <h3 style="margin: 8px 0 0; color: var(--primary); font-size: 1.4rem;">Candidate: Rahul Sharma &bull; Executive Summary</h3>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-size: 0.8rem; color: var(--gray-500); text-transform: uppercase; font-weight: 700;">Overall Aptitude Index</div>
+            <div style="font-size: 1.8rem; font-weight: 850; color: #10b981;">76.4%</div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 28px;">
+          <div>
+            <h4 style="font-size: 1rem; color: var(--text-heading); margin-bottom: 12px;">Top 3 Core Strengths</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="padding: 10px 14px; background: rgba(16, 185, 129, 0.08); border-radius: 8px; border-left: 3px solid #10b981; font-size: 0.88rem;">
+                <strong>1. Learning Agility (88%):</strong> Rapid cognitive absorption of novel technologies, adaptability under ambiguity.
+              </div>
+              <div style="padding: 10px 14px; background: rgba(16, 185, 129, 0.08); border-radius: 8px; border-left: 3px solid #10b981; font-size: 0.88rem;">
+                <strong>2. Problem-Solving Acumen (82%):</strong> Structured decomposition of complex operational bottlenecks into actionable sprints.
+              </div>
+              <div style="padding: 10px 14px; background: rgba(16, 185, 129, 0.08); border-radius: 8px; border-left: 3px solid #10b981; font-size: 0.88rem;">
+                <strong>3. Achievement Drive (79%):</strong> Relentless milestone orientation, intrinsic motivation, and resilience through setbacks.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size: 1rem; color: var(--text-heading); margin-bottom: 12px;">Developmental Focus Areas</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="padding: 10px 14px; background: rgba(255, 107, 53, 0.08); border-radius: 8px; border-left: 3px solid #ff6b35; font-size: 0.88rem;">
+                <strong>1. Financial Risk Assessment (58%):</strong> Tendency to underestimate burn rate; recommend fractional CFO oversight on cap tables.
+              </div>
+              <div style="padding: 10px 14px; background: rgba(255, 107, 53, 0.08); border-radius: 8px; border-left: 3px solid #ff6b35; font-size: 0.88rem;">
+                <strong>2. Organizational Leadership (64%):</strong> Transitioning from solo builder to delegation; recommended leadership coaching module.
+              </div>
+              <div style="padding: 10px 14px; background: rgba(40, 104, 232, 0.08); border-radius: 8px; border-left: 3px solid #2868e8; font-size: 0.88rem;">
+                <strong>3. Operational Cadence (67%):</strong> Establish weekly OKR reviews and customer feedback loops to accelerate time-to-market.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; border-top: 1px dashed var(--border-color); padding-top: 20px;">
+          <button class="btn btn-primary btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">
+            <span>🚀 Take the Assessment to Generate Your Report (₹990)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: FOUNDER READINESS MATRIX (#readiness)
+       ========================================================================== -->
+  <section class="section" id="readiness">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag orange">Role Matching Engine</span>
+        <h2>Founder Readiness Matrix: Discover Your Natural Role</h2>
+        <p class="section-subtitle">
+          Great ventures require complementary founding teams. Our readiness matrix maps your 12 dimensions to the optimal startup C-Suite role.
+        </p>
+      </div>
+
+      <div class="grid grid-4" style="margin-top: 36px;">
+        <div class="feature-card">
+          <div class="feature-icon" style="background: rgba(40, 104, 232, 0.12); color: #2868e8;">👑</div>
+          <h3>Chief Executive Officer (CEO)</h3>
+          <p>High EQ, Achievement Drive, and Visionary Leadership. Drives investor storytelling, co-founder alignment, and company-wide strategic focus.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background: rgba(0, 188, 212, 0.12); color: #00bcd4;">⚡</div>
+          <h3>Chief Technology Officer (CTO)</h3>
+          <p>Superior Problem-Solving, Learning Agility, and Systems Architecture. Builds defensible tech stacks, AI agentic pipelines, and scalable software.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">⚙️</div>
+          <h3>Chief Operating Officer (COO)</h3>
+          <p>Disciplined Operational Execution, Risk Management, and Team Dynamics. Ensures project deadlines, supply chain velocity, and customer delivery SLAs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background: rgba(255, 107, 53, 0.12); color: #ff6b35;">📢</div>
+          <h3>Chief Marketing Officer (CMO)</h3>
+          <p>Creative Expression, Customer Empathy, and Market Acumen. Master of go-to-market funnels, virality, customer acquisition cost (CAC), and brand resonance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: SKILL-GAP ACTION PLAN (#skill-gap)
+       ========================================================================== -->
+  <section class="section section-alt" id="skill-gap">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 48px;">
+        <div>
+          <span class="section-tag">Targeted Upskilling</span>
+          <h2>Your Personalized Skill-Gap Action Plan</h2>
+          <p style="font-size: 1.05rem; color: var(--gray-700); margin-top: 14px;">
+            A score is not a verdict; it is an action blueprint. Based on your identified developmental areas, our platform generates a customized learning sprint and pairs you with industry mentors.
+          </p>
+
+          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 14px;">
+            <div class="dimension-badge">
+              <strong>🧭 Micro-Learning Sprints:</strong> Curated 14-day bite-sized modules on financial literacy, CAC/LTV calculation, and pitch presentation skills.
+            </div>
+            <div class="dimension-badge">
+              <strong>👥 1-on-1 Mentor Office Hours:</strong> Direct feedback sessions with certified practicing founders and CXOs to work through real venture challenges.
+            </div>
+            <div class="dimension-badge">
+              <strong>📈 Re-Assessment &amp; Growth Tracking:</strong> Measure tangible improvement in agility, emotional resilience, and business acumen over 90 days.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); border: 4px solid var(--border-color);">
+            <img src="assets/images/competence-skill-personal-development-concept-2.png" alt="Skill Development Action Plan" style="width: 100%; height: 360px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: METHODOLOGY & PRIVACY (#methodology)
+       ========================================================================== -->
+  <section class="section" id="methodology">
+    <div class="container">
+      <div style="max-width: 960px; margin: 0 auto; background: var(--bg-card); border-radius: var(--radius-lg); padding: 32px 40px; border-left: 4px solid #10b981; box-shadow: var(--shadow-md);">
+        <h4 style="margin: 0 0 12px; color: var(--primary); font-size: 1.2rem; display: flex; align-items: center; gap: 8px;">
+          <span>⚖️</span> Scientific Methodology, Ethical Boundaries &amp; Data Privacy
+        </h4>
+        <p style="font-size: 0.92rem; color: var(--gray-600); line-height: 1.65; margin: 0 0 14px;">
+          The IgniteBiz AI 12-Dimension Psychometric Evaluation is designed as a developmental guidance tool. It evaluates cognitive, emotional, and execution traits across validated psychometric scales. The assessment does not constitute a clinical psychiatric diagnosis, nor does it guarantee entrepreneurial commercial success. Every participant possesses agency to pursue either the Entrepreneurship Track or Skill Development Track regardless of baseline scores; human counselors and mentors are available to review scores upon request.
+        </p>
+        <p style="font-size: 0.92rem; color: var(--gray-600); line-height: 1.65; margin: 0;">
+          All candidate diagnostic records are protected under the Digital Personal Data Protection (DPDP) Act 2023. Data is stored on encrypted Indian servers, is never sold to commercial third parties, and is accessible only to the candidate and authorized studio mentors with explicit consent.
+        </p>
       </div>
     </div>
   </section>
@@ -258,39 +495,49 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+      <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand-logo" style="margin-bottom: 12px;">
-            <img src="assets/images/logo.webp" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'" style="height: 44px; filter: brightness(1.1);">
-            <span style="font-weight: 800; font-size: 1.35rem; color: #ffffff;">IGNITEBIZ AI</span>
+            <img src="assets/images/logo.webp?v=5.2" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'" style="height: 40px; filter: brightness(1.1);">
+            <span style="font-weight: 800; font-size: 1.3rem; color: #ffffff;">IGNITEBIZ AI</span>
           </div>
-          <p>Scientific psychometric tests and complete venture studio incubation for students and founders.</p>
+          <p>World's largest AI-powered Digital Venture Studio initiative aimed at transforming potential from first idea to global IPO enterprise.</p>
         </div>
         <div class="footer-col">
-          <h4>Navigation</h4>
+          <h4>Venture Hubs</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="iris-test.html">Eye 2 I Iris Analysis</a></li>
-            <li><a href="awards.html">Global Innovation Awards</a></li>
+            <li><a href="about.html">About &amp; Ecosystem</a></li>
+            <li><a href="psychometric-12d.html">Discover Yourself</a></li>
+            <li><a href="business-mastery.html">Build Your Startup</a></li>
+            <li><a href="launch-business.html">Launch Your Business</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Programs</h4>
+          <h4>Scale &amp; Capital</h4>
           <ul class="footer-links">
-            <li><a href="c-suite.html">C-Suite / CXO Services</a></li>
-            <li><a href="business-mastery.html">Business Mastery with AI</a></li>
-            <li><a href="focus-domain.html">Focus Domains</a></li>
-            <li><a href="ai-life-manager.html">AI Life Manager</a></li>
+            <li><a href="investor-partners.html">Funding &amp; Investors</a></li>
+            <li><a href="c-suite.html">Digital CXO Services</a></li>
+            <li><a href="global-expansion.html">Global Expansion</a></li>
+            <li><a href="ipo-exits.html">IPO &amp; Strategic Exits</a></li>
+            <li><a href="institutional-partners.html">Institutional Partners</a></li>
+            <li><a href="awards.html">Global Innovation Awards</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Offices</h4>
-          <p style="font-size: 0.88rem; color: var(--gray-400);">7, Nirav Park, Opp. ICICI Bank, Sevashram Road, Bharuch, Gujarat.</p>
-          <p style="font-size: 0.88rem; color: var(--gray-400); margin-top: 8px;">1 Goswami Nivas, Opp. IIT Main Gate, Powai, Mumbai.</p>
+          <h4>Headquarters</h4>
+          <p style="font-size: 0.88rem; color: var(--gray-400); margin-bottom: 8px;">
+            <strong>Corporate:</strong> 7, Nirav Park, Opp. ICICI Bank, Sevashram Road, Bharuch, Gujarat.
+          </p>
+          <p style="font-size: 0.88rem; color: var(--gray-400);">
+            <strong>Registered:</strong> 1 Goswami Nivas, Opp. IIT Main Gate, Powai, Mumbai.
+          </p>
+          <p style="font-size: 0.88rem; color: var(--gray-400); margin-top: 8px;">
+            <strong>Phone:</strong> +91 92241 85764 / +91 97373 11555
+          </p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -333,6 +580,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=5.2"></script>
 </body>
 </html>

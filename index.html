@@ -3,55 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Igniting Business Yoga with AI - World's Largest AI-Powered Venture Studio</title>
+  <title>Turn Potential Into a Scalable Business - Digital Venture Studio - IgniteBiz AI</title>
   <meta name="description" content="Igniting Business Yoga with AI - Empowering students, professionals, and entrepreneurs through 12-Dimension Psychometric Assessments, Eye 2 I Iris Analysis, and Dual Track Venture Architecture.">
   <meta name="keywords" content="Business Yoga with AI, Psychometric Test, Iris Analysis, Venture Studio, Entrepreneurship Track, Skill Development Track, Global Innovation Awards">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+  <link rel="icon" type="image/webp" href="assets/images/logo.webp?v=5.2">
   
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=5.2">
+          <!-- Theme Initialization & Instant Toggle Engine -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('ignitebiz_theme');
+      const theme = (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+      if (document.body) document.body.setAttribute('data-theme', theme);
+    })();
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      if (document.body) document.body.setAttribute('data-theme', next);
+      try {
+        localStorage.setItem('ignitebiz_theme', next);
+      } catch (e) {}
+      
+      const isDark = (next === 'dark');
+      document.querySelectorAll('.theme-toggle-btn').forEach(function(btn) {
+        btn.setAttribute('title', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+        btn.setAttribute('aria-label', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+      });
+
+      window.dispatchEvent(new CustomEvent('themechanged', { detail: { theme: next } }));
+    }
+    window.toggleTheme = toggleTheme;
+  </script>
 </head>
 <body>
 
-  <!-- Top Notification / Info Bar -->
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar-left">
-        <span class="topbar-item">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Bharuch (Gujarat) & Mumbai (Maharashtra), India
-        </span>
-        <span class="topbar-item">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          admin@ignitebizai.com
-        </span>
-      </div>
-      <div class="topbar-right">
-        <span class="topbar-badge">NEP 2020 Aligned</span>
-        <span class="topbar-item">
-          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          +91 92241 85764 / +91 97373 11555
-        </span>
-        <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="topbar-badge" style="background: rgba(0, 188, 212, 0.2); color: #38bdf8;">Assessment Portal &rarr;</a>
-      </div>
-    </div>
-  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!-- Global Interactive Neural Canvas for All White/Light Backgrounds -->
+  <canvas id="global-neural-canvas" class="global-neural-canvas"></canvas>
 
   <!-- Main Navigation Header -->
-  <header class="site-header">
+        <header class="site-header">
     <div class="container">
       <nav class="navbar">
         <a href="index.html" class="brand-logo" aria-label="IgniteBiz AI Home">
-          <img src="assets/images/logo.webp" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'">
+          <div class="brand-logo-img-wrapper">
+            <img src="assets/images/logo.webp?v=5.2" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'">
+          </div>
           <div class="brand-title">
-            <span>IGNITEBIZ AI</span>
-            <span class="brand-subtitle">Business Yoga with AI</span>
+            <span class="brand-name">IGNITEBIZ AI</span>
+            <span class="brand-subtitle"><span class="neural-pulse-dot"></span>Venture Studio</span>
           </div>
         </a>
 
-        <!-- Desktop Navigation Menu -->
+        <!-- Desktop Navigation Menu (Direct Clean Links - No Dropdown Menus) -->
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link active">Home</a>
@@ -60,50 +76,29 @@
             <a href="about.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              Psychometric Test
-              <svg class="caret" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
-            </a>
-            <div class="dropdown-menu">
-              <a href="psychometric-12d.html" class="dropdown-item">12-Dimension Evaluation Test</a>
-              <a href="iris-test.html" class="dropdown-item">Eye 2 I – Iris Analysis Test</a>
-            </div>
+            <a href="psychometric-12d.html" class="nav-link">Discover Yourself</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              Entrepreneur Track
-              <svg class="caret" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
-            </a>
-            <div class="dropdown-menu">
-              <a href="awards.html" class="dropdown-item">Global Business Innovation Awards</a>
-              <a href="business-mastery.html" class="dropdown-item">Business Mastery with AI</a>
-              <a href="c-suite.html" class="dropdown-item">C-Suite / CXO Services</a>
-              <a href="venture-architect.html" class="dropdown-item">Venture Architect & Strategist</a>
-            </div>
+            <a href="business-mastery.html" class="nav-link">Build Startup</a>
           </li>
           <li class="nav-item">
-            <a href="investor-partners.html" class="nav-link">Investor Partners</a>
+            <a href="launch-business.html" class="nav-link">Launch Business</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              Skill Development Track
-              <svg class="caret" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
-            </a>
-            <div class="dropdown-menu">
-              <a href="focus-domain.html" class="dropdown-item">Focus Domain (Skill Track)</a>
-              <a href="ai-life-manager.html" class="dropdown-item">AI Life Manager</a>
-              <a href="ai-general-workshop.html" class="dropdown-item">Agentic AI General Workshop</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
 
         <!-- Right Action Buttons -->
         <div class="nav-actions">
-          <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Login</a>
-          <button class="btn btn-primary btn-sm btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">Start Test</button>
+          <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Light and Dark Mode" title="Toggle Light/Dark Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.3 2a10 10 0 00-1.9.18 1 1 0 00-.79 1.15 1 1 0 001.09.82A8 8 0 0119.8 11.8a1 1 0 00.8 1.08 1 1 0 001.11-.75A10 10 0 0012.3 2zM9.27 4.49a1 1 0 00-.34.78 10 10 0 1010.6 10.6 1 1 0 00-.76-1.12 1 1 0 00-1.18.43A8 8 0 119.27 4.49z"/></svg>
+          </button>
+          <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="btn-nav-login">Login</a>
+          <button class="btn-nav-start" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">
+            <span>🚀 Start Journey</span>
+          </button>
           <button class="hamburger" aria-label="Toggle mobile menu">
             <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
           </button>
@@ -112,65 +107,39 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
   <div class="drawer-overlay"></div>
   <aside class="mobile-drawer">
     <div class="mobile-drawer-header">
       <div class="brand-logo">
-        <img src="assets/images/logo.webp" alt="IgniteBiz AI Logo" style="height: 38px;">
-        <span style="font-weight: 800; font-size: 1.15rem; color: var(--primary);">IGNITEBIZ AI</span>
+        <img src="assets/images/logo.webp?v=5.2" alt="IgniteBiz AI Logo" style="height: 36px;">
+        <span style="font-weight: 800; font-size: 1.12rem; color: var(--primary);">IGNITEBIZ AI</span>
       </div>
-      <button class="close-drawer" aria-label="Close menu">&times;</button>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="theme-toggle-btn mobile-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Light and Dark Mode" title="Toggle Light/Dark Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 00-1.41-1.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.3 2a10 10 0 00-1.9.18 1 1 0 00-.79 1.15 1 1 0 001.09.82A8 8 0 0119.8 11.8a1 1 0 00.8 1.08 1 1 0 001.11-.75A10 10 0 0012.3 2zM9.27 4.49a1 1 0 00-.34.78 10 10 0 1010.6 10.6 1 1 0 00-.76-1.12 1 1 0 00-1.18.43A8 8 0 119.27 4.49z"/></svg>
+        </button>
+        <button class="close-drawer" aria-label="Close menu">&times;</button>
+      </div>
     </div>
     
     <div class="mobile-nav-list">
-      <a href="index.html" class="mobile-nav-link active">Home</a>
-      <a href="about.html" class="mobile-nav-link">About Us</a>
-      
-      <div class="mobile-nav-item">
-        <div class="mobile-nav-link mobile-submenu-toggle">
-          <span>Psychometric Test</span>
-          <span class="caret-icon">&darr;</span>
-        </div>
-        <div class="mobile-submenu">
-          <a href="psychometric-12d.html">12-Dimension Comprehensive Test</a>
-          <a href="iris-test.html">Eye 2 I – Iris Analysis Test</a>
-        </div>
-      </div>
-
-      <div class="mobile-nav-item">
-        <div class="mobile-nav-link mobile-submenu-toggle">
-          <span>Entrepreneur Track</span>
-          <span class="caret-icon">&darr;</span>
-        </div>
-        <div class="mobile-submenu">
-          <a href="awards.html">Global Business Innovation Awards</a>
-          <a href="business-mastery.html">Business Mastery with AI</a>
-          <a href="c-suite.html">C-Suite / CXO Services</a>
-          <a href="venture-architect.html">Venture Architect & Strategist</a>
-        </div>
-      </div>
-
-      <a href="investor-partners.html" class="mobile-nav-link">Investor Partners</a>
-
-      <div class="mobile-nav-item">
-        <div class="mobile-nav-link mobile-submenu-toggle">
-          <span>Skill Development Track</span>
-          <span class="caret-icon">&darr;</span>
-        </div>
-        <div class="mobile-submenu">
-          <a href="focus-domain.html">Focus Domain (Skill Track)</a>
-          <a href="ai-life-manager.html">AI Life Manager</a>
-          <a href="ai-general-workshop.html">Agentic AI General Workshop</a>
-        </div>
-      </div>
-
+      <a href="index.html" class="mobile-nav-link active">1. Home</a>
+      <a href="about.html" class="mobile-nav-link">2. About Us</a>
+      <a href="psychometric-12d.html" class="mobile-nav-link">3. Discover Yourself</a>
+      <a href="business-mastery.html" class="mobile-nav-link">4. Build Your Startup</a>
+      <a href="launch-business.html" class="mobile-nav-link">5. Launch Your Business</a>
+      <a href="investor-partners.html" class="mobile-nav-link">6. Funding &amp; Investors</a>
+      <a href="c-suite.html" class="mobile-nav-link">7. Digital CXO Services</a>
+      <a href="global-expansion.html" class="mobile-nav-link">8. Global Expansion</a>
+      <a href="ipo-exits.html" class="mobile-nav-link">9. IPO Readiness</a>
+      <a href="institutional-partners.html" class="mobile-nav-link">10. Institutional Partners</a>
       <a href="contact.html" class="mobile-nav-link">Contact Us</a>
     </div>
 
     <div style="margin-top: auto; padding-top: 24px; border-top: 1px solid var(--gray-200); display: flex; flex-direction: column; gap: 12px;">
       <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Candidate Login</a>
-      <button class="btn btn-primary" style="width: 100%;" data-open-modal>Start Psychometric Test</button>
+      <button class="btn btn-primary" style="width: 100%;" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">Start Your Journey</button>
     </div>
   </aside>
 
@@ -179,10 +148,13 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <span class="section-tag orange">AI-Powered Venture Studio &amp; Talent Transformation</span>
+          <span class="hero-tag pulse-tag" style="margin-bottom: 12px; display: inline-block;">IGNITEBIZAI &bull; HOME</span>
           <h1 class="hero-title">
-            Igniting <span class="highlight text-gradient">Business Yoga</span> with AI
+            Turn Your Potential Into a <span class="highlight text-gradient">Scalable Business</span>
           </h1>
+          <div style="font-size: 1.25rem; font-weight: 700; color: #2868e8; margin-top: -6px; margin-bottom: 18px; letter-spacing: -0.01em;">
+            One connected journey from discovery to global growth
+          </div>
 
           <!-- National Education Policy Quote -->
           <div class="hero-nep-quote">
@@ -198,13 +170,16 @@
             Empowering students, professionals, and innovators through scientific psychometric evaluations, AI-enabled iris analysis, and a structured dual-track pathway for startup founders and future-ready industry experts.
           </p>
 
-          <div class="hero-actions">
+          <div class="hero-actions" style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
             <button class="btn btn-primary btn-lg btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">
-              <span>Take Psychometric Test (₹990)</span>
+              <span>🚀 Start Your Startup Journey</span>
               <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
             </button>
-            <a href="#dual-track" class="btn btn-outline btn-lg btn-round">
-              Explore Dual Tracks
+            <a href="#startup-journey" class="btn btn-outline btn-lg btn-round">
+              🗺️ Explore the 12-Stage Journey
+            </a>
+            <a href="psychometric-12d.html" style="font-size: 0.92rem; font-weight: 700; color: #02569b; text-decoration: underline; margin-left: 6px;">
+              Take the Assessment &rarr;
             </a>
           </div>
 
@@ -235,31 +210,627 @@
 
         <!-- Hero Visual Showcase -->
         <div class="hero-visual">
-          <div class="hero-image-mosaic">
-            <div class="mosaic-card card-large">
-              <img src="assets/images/cheerful-indian-asian-young-group-college-students-1.png" alt="Indian college students collaborating" loading="lazy">
-            </div>
-            <div class="mosaic-card">
-              <img src="assets/images/group-indian-college-students-posing-with-thumbs-up-gesture-2.png" alt="Indian students giving thumbs up" loading="lazy">
-            </div>
-            <div class="mosaic-card">
-              <img src="assets/images/promising-turnout-as-girl-students-flock-college-open-counseling-gurgaon-india-1.png" alt="Students in counseling session" loading="lazy">
-            </div>
+          <div class="hero-telemetry-wrapper">
+            <!-- Holographic Telemetry Card (Enhanced Large Centerpiece) -->
+            <div class="holographic-brain-card hero-card-enhanced">
+              <!-- Top Award Badge Banner -->
+              <div class="holo-card-top-bar">
+                <div class="holo-award-pill">
+                  <span class="holo-live-dot"></span>
+                  <span>$100,000 Global Award Prize</span>
+                </div>
+                <div class="holo-telemetry-badge">
+                  <span class="telemetry-live-dot"></span>
+                  <span>LIVE COGNITIVE LINK</span>
+                </div>
+              </div>
 
-            <!-- Floating Badge Pills -->
-            <div class="floating-pill pill-1">
-              <div class="pill-dot"></div>
-              <span>3,680+ Students Sensitized</span>
-            </div>
-            <div class="floating-pill pill-2">
-              <div class="pill-dot" style="background:#02569b; box-shadow:0 0 8px #02569b;"></div>
-              <span>$100,000 Global Award Prize</span>
+              <!-- Main Core Row -->
+              <div class="holo-brain-main">
+                <div class="holo-brain-orb">
+                  <div class="holo-ring-1"></div>
+                  <div class="holo-brain-icon">🧠</div>
+                </div>
+                <div class="holo-brain-info">
+                  <div class="holo-brain-title">
+                    <span>100 Billion Neurons Core</span>
+                    <span class="holo-live-dot" title="Live Synaptic Telemetry"></span>
+                  </div>
+                  <div class="holo-brain-subtitle">Optical Nerve &amp; Psychometric Telemetry</div>
+                </div>
+              </div>
+
+              <!-- Metrics Stats Pills -->
+              <div class="holo-brain-stats">
+                <div class="holo-stat-pill">
+                  <span>⚡ 99.4%</span> Optical Link
+                </div>
+                <div class="holo-stat-pill orange">
+                  <span>Alpha 10Hz</span> Business Yoga
+                </div>
+                <div class="holo-stat-pill green">
+                  <span>3,680+</span> Sensitized
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ==========================================================================
+       SECTION: THE REAL STARTUP JOURNEY (12 OPERATIONAL STAGE GATES)
+       ========================================================================== -->
+  <section class="startup-journey-section" id="startup-journey">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">THE FOUNDER'S OPERATING SYSTEM</span>
+        <h2>The Real Startup Journey: <span class="text-gradient">12 Operational Stage Gates</span></h2>
+        <p class="section-subtitle">
+          Every venture follows an evidence-backed progression. Know exactly where you are, what deliverables you receive, and your next clear milestone.
+        </p>
+      </div>
+
+      <div class="stages-grid">
+        <!-- Stage 01 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(40, 104, 232, 0.1); color: #2868e8;">Stage 01</span>
+          <h3>Mass Canvassing &amp; Outreach</h3>
+          <p>Structured outreach across 500+ universities, coaching institutes, MSME clusters, and corporate innovation ecosystems.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Qualified Lead &amp; Consent</span>
+          </div>
+          <a href="#who-we-help" class="stage-action-btn">Select Cohort &rarr;</a>
+        </div>
+
+        <!-- Stage 02 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(0, 188, 212, 0.1); color: #00bcd4;">Stage 02</span>
+          <h3>Onboarding &amp; Psychometric Test</h3>
+          <p>12-Dimension Evaluation and Eye 2 I Iris Analysis decoding cognitive agility, leadership resilience, and execution readiness.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Diagnostic Profile &amp; Pathway</span>
+          </div>
+          <a href="psychometric-12d.html" class="stage-action-btn">Take Assessment &rarr;</a>
+        </div>
+
+        <!-- Stage 03 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(147, 51, 234, 0.1); color: #9333ea;">Stage 03</span>
+          <h3>Ideation &amp; Founder-Problem Fit</h3>
+          <p>Sector opportunity scans and founder-fit problem prompts to ensure you solve a painful, high-value commercial problem.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Prioritized Problem Statement</span>
+          </div>
+          <a href="business-mastery.html#ideation" class="stage-action-btn">Find an Idea &rarr;</a>
+        </div>
+
+        <!-- Stage 04 -->
+        <div class="stage-card highlight-card">
+          <span class="stage-number-badge" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">Stage 04 &bull; SEQUA Gate</span>
+          <h3>Customer &amp; Demand Validation</h3>
+          <p>Rigorous customer interview guides, willingness-to-pay tests, unit economics, and competitive moat validation.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Evidence-Backed Go/No-Go Report</span>
+          </div>
+          <a href="business-mastery.html#validation" class="stage-action-btn" style="background: #10b981; color: white;">Validate Demand &rarr;</a>
+        </div>
+
+        <!-- Stage 05 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(255, 107, 53, 0.1); color: #ff6b35;">Stage 05</span>
+          <h3>Master Pitch Deck Dossier</h3>
+          <p>Reusable core 15-slide master deck, financial model, executive summary, and tailored competition grant applications.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Core Pitch Pack &amp; Model</span>
+          </div>
+          <a href="business-mastery.html#pitch-deck" class="stage-action-btn">View Pitch Pack &rarr;</a>
+        </div>
+
+        <!-- Stage 06 -->
+        <div class="stage-card highlight-card">
+          <span class="stage-number-badge" style="background: rgba(40, 104, 232, 0.15); color: #2868e8;">Stage 06 &bull; Launchpad</span>
+          <h3>Registration &amp; Onboarding</h3>
+          <p>Legal structure selection (Pvt Ltd / LLP), SPICe+ MCA filing, and DPIIT Startup India 3-year tax exemption certification.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Entity Records &amp; CoI</span>
+          </div>
+          <a href="launch-business.html" class="stage-action-btn" style="background: #2868e8; color: white;">Create Launch Plan &rarr;</a>
+        </div>
+
+        <!-- Stage 07 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">Stage 07</span>
+          <h3>IPR, Patents &amp; Trademarks</h3>
+          <p>Prior-art novelty searches, provisional patent filing (12-month priority), trademark registration, and trade secret NDAs.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Filed Patent &amp; TM Protection</span>
+          </div>
+          <a href="launch-business.html#ipr-patents" class="stage-action-btn">Secure IP Moat &rarr;</a>
+        </div>
+
+        <!-- Stage 08 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">Stage 08</span>
+          <h3>MVP, Launch &amp; Early Sales</h3>
+          <p>Smallest testable product build, go-to-market testing, pricing telemetry, and acquiring the first 100 paying customers.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Product Evidence &amp; Revenue</span>
+          </div>
+          <a href="business-mastery.html#mvp-roadmap" class="stage-action-btn">Build MVP Roadmap &rarr;</a>
+        </div>
+
+        <!-- Stage 09 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(255, 107, 53, 0.1); color: #ff6b35;">Stage 09</span>
+          <h3>Funding &amp; Investor Matching</h3>
+          <p>Funding readiness audit, government grants (SISFS / BIRAC), cap table design, and AI matching with thesis-aligned angels.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Investor Pipeline &amp; Data Room</span>
+          </div>
+          <a href="investor-partners.html" class="stage-action-btn">Check Readiness &rarr;</a>
+        </div>
+
+        <!-- Stage 10 -->
+        <div class="stage-card highlight-card">
+          <span class="stage-number-badge" style="background: rgba(2, 86, 155, 0.15); color: #02569b;">Stage 10 &bull; Leadership</span>
+          <h3>Digital CXO Services (5 Years)</h3>
+          <p>Fractional CFO (burn rate &amp; unit economics), CMO (growth funnels), CTO (AI architecture), and COO embedded in your venture.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Embedded C-Suite Governance</span>
+          </div>
+          <a href="c-suite.html" class="stage-action-btn" style="background: #02569b; color: white;">Find My CXO &rarr;</a>
+        </div>
+
+        <!-- Stage 11 -->
+        <div class="stage-card">
+          <span class="stage-number-badge" style="background: rgba(40, 104, 232, 0.1); color: #2868e8;">Stage 11</span>
+          <h3>Global Expansion Corridors</h3>
+          <p>Country selection scorecard, vetted distributor screening, FEMA ODI compliance, and market entry into UAE, UK, US, and Singapore.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Cross-Border Expansion Plan</span>
+          </div>
+          <a href="global-expansion.html" class="stage-action-btn">Explore Corridors &rarr;</a>
+        </div>
+
+        <!-- Stage 12 -->
+        <div class="stage-card highlight-card">
+          <span class="stage-number-badge" style="background: rgba(147, 51, 234, 0.15); color: #9333ea;">Stage 12 &bull; Value Exit</span>
+          <h3>IPO Readiness &amp; Strategic Exits</h3>
+          <p>SEBI/BSE SME listing diagnostic, board governance, Ind-AS restated audits, Category-I Merchant Banker syndicate, and M&amp;A exits.</p>
+          <div class="stage-gate-box">
+            <span class="stage-gate-label">Gate / Deliverable</span>
+            <span class="stage-gate-value">✓ Institutional Listing Roadmap</span>
+          </div>
+          <a href="ipo-exits.html" class="stage-action-btn" style="background: #9333ea; color: white;">Assess IPO Readiness &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: WHO WE HELP (6 FOUNDER COHORT PATHWAYS)
+       ========================================================================== -->
+  <section class="section section-alt" id="who-we-help">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag orange">Tailored Cohort Journeys</span>
+        <h2>Who We Help: <span class="text-gradient">Choose Your Starting Point</span></h2>
+        <p class="section-subtitle">
+          Whether you are a student exploring your first idea, an established MSME modernizing, or an academic institution building an incubator, we have a calibrated pathway for you.
+        </p>
+      </div>
+
+      <!-- Cohort Selector Tabs -->
+      <div class="cohort-tabs-nav">
+        <button class="cohort-tab-btn active" data-cohort="students">🎓 College Students</button>
+        <button class="cohort-tab-btn" data-cohort="aspiring">💡 Aspiring Founders</button>
+        <button class="cohort-tab-btn" data-cohort="startups">🚀 Early Startups</button>
+        <button class="cohort-tab-btn" data-cohort="msmes">🏭 MSME Owners</button>
+        <button class="cohort-tab-btn" data-cohort="institutions">🏛️ Universities &amp; E-Cells</button>
+        <button class="cohort-tab-btn" data-cohort="mentors">👔 Mentors &amp; Experts</button>
+      </div>
+
+      <!-- Cohort Panels -->
+      <div class="cohort-display-card">
+        <!-- Panel 1: Students -->
+        <div class="cohort-panel active" id="cohort-students" style="display: block;">
+          <div class="grid grid-2" style="align-items: center; gap: 36px;">
+            <div>
+              <span class="badge badge-accent">Pathway: Campus to Incorporation</span>
+              <h3 style="font-size: 1.45rem; margin: 12px 0; color: var(--primary);">College Students &amp; Young Innovators</h3>
+              <p style="font-size: 1rem; color: var(--gray-700); line-height: 1.6;">
+                Turn academic final-year projects and hackathon concepts into real DPIIT-recognized startups before graduation.
+              </p>
+              <div style="margin: 18px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+                <div><strong>• Your Challenge:</strong> Lack of corporate experience, confusion between multiple ideas, zero seed capital.</div>
+                <div><strong>• Studio Solution:</strong> 12-Dimension talent assessment, problem-validation prompts, and campus seed grants.</div>
+                <div><strong>• Exact Deliverable:</strong> Registered Private Limited entity, DPIIT certificate, and master pitch deck.</div>
+              </div>
+              <button class="btn btn-primary btn-round" data-open-modal data-test-name="Student Founder Assessment">
+                <span>Start Student Assessment &rarr;</span>
+              </button>
+            </div>
+            <div>
+              <div class="cohort-visual-stage">
+                <div class="cohort-visual-aura"></div>
+                <div class="cohort-visual-inner">
+                  <div class="cohort-telemetry-badge">
+                    <span class="cohort-pulse-dot"></span>
+                    <span>● CAMPUS LAUNCHPAD</span>
+                  </div>
+                  <span class="cohort-stat-chip">500+ Campuses</span>
+                  <img src="assets/images/cohort-students.jpg" alt="College Student Innovators in AI Incubation Lab" class="cohort-visual-img">
+                  <div class="cohort-visual-gradient-overlay"></div>
+                  <div class="cohort-floating-stat-pill">
+                    <div class="cohort-stat-item">
+                      <span class="cohort-stat-value">₹10,00,000</span>
+                      <span class="cohort-stat-label">Seed Grant Cap</span>
+                    </div>
+                    <div style="width: 1px; height: 26px; background: rgba(255, 255, 255, 0.2);"></div>
+                    <div class="cohort-stat-item" style="text-align: right;">
+                      <span class="cohort-stat-value">14-Day SPICe+</span>
+                      <span class="cohort-stat-label">MCA Incorporation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Aspiring Founders -->
+        <div class="cohort-panel" id="cohort-aspiring" style="display: none;">
+          <div class="grid grid-2" style="align-items: center; gap: 36px;">
+            <div>
+              <span class="badge" style="background: #2868e8; color: white;">Pathway: Validation Before Resignation</span>
+              <h3 style="font-size: 1.45rem; margin: 12px 0; color: var(--primary);">Aspiring Founders with an Idea</h3>
+              <p style="font-size: 1rem; color: var(--gray-700); line-height: 1.6;">
+                Working professionals and serial thinkers ready to transition into entrepreneurship without burning life savings on unvalidated ideas.
+              </p>
+              <div style="margin: 18px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+                <div><strong>• Your Challenge:</strong> High opportunity cost, fear of failure, unknown customer demand.</div>
+                <div><strong>• Studio Solution:</strong> Customer discovery interviews, willingness-to-pay tests, and financial modeling.</div>
+                <div><strong>• Exact Deliverable:</strong> Evidence-backed go/no-go validation dossier and clear launch timeline.</div>
+              </div>
+              <a href="business-mastery.html#validation" class="btn btn-primary btn-round">
+                <span>Validate Your Idea &rarr;</span>
+              </a>
+            </div>
+            <div>
+              <div class="cohort-visual-stage">
+                <div class="cohort-visual-aura"></div>
+                <div class="cohort-visual-inner">
+                  <div class="cohort-telemetry-badge">
+                    <span class="cohort-pulse-dot"></span>
+                    <span>● VALIDATION GATEWAY</span>
+                  </div>
+                  <span class="cohort-stat-chip">Pre-Seed Safe</span>
+                  <img src="assets/images/cohort-aspiring.jpg" alt="Aspiring Founder Validating Startup Model" class="cohort-visual-img">
+                  <div class="cohort-visual-gradient-overlay"></div>
+                  <div class="cohort-floating-stat-pill">
+                    <div class="cohort-stat-item">
+                      <span class="cohort-stat-value">88.5% Score</span>
+                      <span class="cohort-stat-label">Demand Validation</span>
+                    </div>
+                    <div style="width: 1px; height: 26px; background: rgba(255, 255, 255, 0.2);"></div>
+                    <div class="cohort-stat-item" style="text-align: right;">
+                      <span class="cohort-stat-value">Zero-Risk</span>
+                      <span class="cohort-stat-label">Validate Before Quit</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Startups -->
+        <div class="cohort-panel" id="cohort-startups" style="display: none;">
+          <div class="grid grid-2" style="align-items: center; gap: 36px;">
+            <div>
+              <span class="badge" style="background: #10b981; color: white;">Pathway: Seed to Series A</span>
+              <h3 style="font-size: 1.45rem; margin: 12px 0; color: var(--primary);">Early-Stage Startups (Pre-Seed / Seed)</h3>
+              <p style="font-size: 1rem; color: var(--gray-700); line-height: 1.6;">
+                Startups that have built a prototype and need institutional capitalization, clean governance, and market acceleration.
+              </p>
+              <div style="margin: 18px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+                <div><strong>• Your Challenge:</strong> Messy cap table, investor rejection, high customer acquisition cost (CAC).</div>
+                <div><strong>• Studio Solution:</strong> Pitch deck rebuild, due diligence data room, and AI matching with active seed VCs.</div>
+                <div><strong>• Exact Deliverable:</strong> Investor-ready data room and founder-approved introductions.</div>
+              </div>
+              <a href="investor-partners.html" class="btn btn-primary btn-round">
+                <span>Check Funding Readiness &rarr;</span>
+              </a>
+            </div>
+            <div>
+              <div class="cohort-visual-stage">
+                <div class="cohort-visual-aura"></div>
+                <div class="cohort-visual-inner">
+                  <div class="cohort-telemetry-badge">
+                    <span class="cohort-pulse-dot"></span>
+                    <span>● AI INVESTOR MATCH</span>
+                  </div>
+                  <span class="cohort-stat-chip">Series A Ready</span>
+                  <img src="assets/images/cohort-startups.jpg" alt="Early Stage Startup Pitching to VC Investors" class="cohort-visual-img">
+                  <div class="cohort-visual-gradient-overlay"></div>
+                  <div class="cohort-floating-stat-pill">
+                    <div class="cohort-stat-item">
+                      <span class="cohort-stat-value">35+ VC Matches</span>
+                      <span class="cohort-stat-label">Thesis-Aligned</span>
+                    </div>
+                    <div style="width: 1px; height: 26px; background: rgba(255, 255, 255, 0.2);"></div>
+                    <div class="cohort-stat-item" style="text-align: right;">
+                      <span class="cohort-stat-value">100% Diligence</span>
+                      <span class="cohort-stat-label">Clean Data Room</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: MSMEs -->
+        <div class="cohort-panel" id="cohort-msmes" style="display: none;">
+          <div class="grid grid-2" style="align-items: center; gap: 36px;">
+            <div>
+              <span class="badge" style="background: #ff6b35; color: white;">Pathway: Traditional to Tech-Enabled</span>
+              <h3 style="font-size: 1.45rem; margin: 12px 0; color: var(--primary);">MSME Owners &amp; Family Businesses</h3>
+              <p style="font-size: 1rem; color: var(--gray-700); line-height: 1.6;">
+                Traditional business owners looking to digitize operations, automate workflows, and expand into Dubai, London, and international export corridors.
+              </p>
+              <div style="margin: 18px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+                <div><strong>• Your Challenge:</strong> Margin erosion, legacy software, lack of global export distribution channels.</div>
+                <div><strong>• Studio Solution:</strong> Fractional C-Suite intervention, cloud ERP setup, and cross-border trade corridors.</div>
+                <div><strong>• Exact Deliverable:</strong> Modernized operating cadence and bilateral export distribution plan.</div>
+              </div>
+              <a href="global-expansion.html" class="btn btn-primary btn-round">
+                <span>Explore Global Expansion &rarr;</span>
+              </a>
+            </div>
+            <div>
+              <div class="cohort-visual-stage">
+                <div class="cohort-visual-aura"></div>
+                <div class="cohort-visual-inner">
+                  <div class="cohort-telemetry-badge">
+                    <span class="cohort-pulse-dot"></span>
+                    <span>● CLOUD ERP &amp; EXPORTS</span>
+                  </div>
+                  <span class="cohort-stat-chip">Bilateral Corridors</span>
+                  <img src="assets/images/cohort-msmes.jpg" alt="MSME Industrialist Automating Operations and Exports" class="cohort-visual-img">
+                  <div class="cohort-visual-gradient-overlay"></div>
+                  <div class="cohort-floating-stat-pill">
+                    <div class="cohort-stat-item">
+                      <span class="cohort-stat-value">+24% Margin</span>
+                      <span class="cohort-stat-label">AI Automation Gain</span>
+                    </div>
+                    <div style="width: 1px; height: 26px; background: rgba(255, 255, 255, 0.2);"></div>
+                    <div class="cohort-stat-item" style="text-align: right;">
+                      <span class="cohort-stat-value">UAE, UK &amp; EU</span>
+                      <span class="cohort-stat-label">Export Network</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 5: Institutions -->
+        <div class="cohort-panel" id="cohort-institutions" style="display: none;">
+          <div class="grid grid-2" style="align-items: center; gap: 36px;">
+            <div>
+              <span class="badge" style="background: #02569b; color: white;">Pathway: Campus Venture Studio</span>
+              <h3 style="font-size: 1.45rem; margin: 12px 0; color: var(--primary);">Universities, E-Cells &amp; Colleges</h3>
+              <p style="font-size: 1rem; color: var(--gray-700); line-height: 1.6;">
+                Academic institutions aiming to activate student innovation, boost NIRF/NAAC innovation rankings, and run accredited 90-day venture cohorts.
+              </p>
+              <div style="margin: 18px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+                <div><strong>• Your Challenge:</strong> Low student engagement in E-Cells, lack of structured commercialization frameworks.</div>
+                <div><strong>• Studio Solution:</strong> Plug-and-play 90-day cohort calendar, psychometric talent diagnostic, and Demo Days.</div>
+                <div><strong>• Exact Deliverable:</strong> Documented cohort impact report and accredited startup incorporations.</div>
+              </div>
+              <a href="institutional-partners.html" class="btn btn-primary btn-round">
+                <span>Partner Your Institution &rarr;</span>
+              </a>
+            </div>
+            <div>
+              <div class="cohort-visual-stage">
+                <div class="cohort-visual-aura"></div>
+                <div class="cohort-visual-inner">
+                  <div class="cohort-telemetry-badge">
+                    <span class="cohort-pulse-dot"></span>
+                    <span>● ACCREDITED COHORT</span>
+                  </div>
+                  <span class="cohort-stat-chip">NIRF / NAAC Aligned</span>
+                  <img src="assets/images/cohort-institutions.jpg" alt="University Campus Innovation and Incubation Hall" class="cohort-visual-img">
+                  <div class="cohort-visual-gradient-overlay"></div>
+                  <div class="cohort-floating-stat-pill">
+                    <div class="cohort-stat-item">
+                      <span class="cohort-stat-value">38 Startups</span>
+                      <span class="cohort-stat-label">Annual Cohort Avg</span>
+                    </div>
+                    <div style="width: 1px; height: 26px; background: rgba(255, 255, 255, 0.2);"></div>
+                    <div class="cohort-stat-item" style="text-align: right;">
+                      <span class="cohort-stat-value">90-Day Sprint</span>
+                      <span class="cohort-stat-label">Plug &amp; Play Studio</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 6: Mentors -->
+        <div class="cohort-panel" id="cohort-mentors" style="display: none;">
+          <div class="grid grid-2" style="align-items: center; gap: 36px;">
+            <div>
+              <span class="badge" style="background: #9333ea; color: white;">Pathway: Advisory Syndicate</span>
+              <h3 style="font-size: 1.45rem; margin: 12px 0; color: var(--primary);">Domain Mentors &amp; Practicing CXOs</h3>
+              <p style="font-size: 1rem; color: var(--gray-700); line-height: 1.6;">
+                Senior executives, practicing CAs, CSs, and patent attorneys seeking to co-build high-potential ventures with transparent compensation.
+              </p>
+              <div style="margin: 18px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem;">
+                <div><strong>• Your Challenge:</strong> Unvetted founders who waste advisory time, unclear commercial terms.</div>
+                <div><strong>• Studio Solution:</strong> Pre-screened high-aptitude founders, standardized scopes, and ethical conflict boundaries.</div>
+                <div><strong>• Exact Deliverable:</strong> Structured advisory mandates with prompt retainer disbursements.</div>
+              </div>
+              <a href="institutional-partners.html#mentor-onboard" class="btn btn-primary btn-round">
+                <span>Join Mentor Network &rarr;</span>
+              </a>
+            </div>
+            <div>
+              <div class="cohort-visual-stage">
+                <div class="cohort-visual-aura"></div>
+                <div class="cohort-visual-inner">
+                  <div class="cohort-telemetry-badge">
+                    <span class="cohort-pulse-dot"></span>
+                    <span>● ADVISORY SYNDICATE</span>
+                  </div>
+                  <span class="cohort-stat-chip">Top 1% CXOs</span>
+                  <img src="assets/images/cohort-mentors.jpg" alt="Executive Mentor Advisory Syndicate" class="cohort-visual-img">
+                  <div class="cohort-visual-gradient-overlay"></div>
+                  <div class="cohort-floating-stat-pill">
+                    <div class="cohort-stat-item">
+                      <span class="cohort-stat-value">Prompt Escrow</span>
+                      <span class="cohort-stat-label">Monthly Retainer</span>
+                    </div>
+                    <div style="width: 1px; height: 26px; background: rgba(255, 255, 255, 0.2);"></div>
+                    <div class="cohort-stat-item" style="text-align: right;">
+                      <span class="cohort-stat-value">100% Vetted</span>
+                      <span class="cohort-stat-label">High-Aptitude Founders</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: WHAT YOU GET (6 CORE VENTURE STUDIO HUBS)
+       ========================================================================== -->
+  <section class="section" id="what-you-get">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">COMPREHENSIVE STUDIO VALUE</span>
+        <h2>What You Get: <span class="text-gradient">6 Core Venture Studio Hubs</span></h2>
+        <p class="section-subtitle">
+          IgniteBiz AI replaces fragmented point-solutions with an integrated venture studio platform that co-builds with you at every milestone.
+        </p>
+      </div>
+
+      <div class="grid grid-3" style="margin-top: 36px;">
+        <!-- Hub 1 -->
+        <div class="studio-hub-card">
+          <div class="studio-hub-icon" style="background: rgba(0, 188, 212, 0.12); color: #00bcd4;">🧠</div>
+          <h3>1. Talent Discovery &amp; Cognitive Mapping</h3>
+          <p>Scientific 12-Dimension Evaluation and Eye 2 I Iris Analysis mapping cognitive traits, entrepreneurial quotient, and execution blind spots.</p>
+          <ul class="checklist-bullet" style="margin-top: 14px; font-size: 0.88rem;">
+            <li>✓ 12-page diagnostic report</li>
+            <li>✓ Optical nerve brainwave mapping</li>
+            <li>✓ Developmental action roadmap</li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="psychometric-12d.html" class="stage-action-btn">Explore Hub 1 &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Hub 2 -->
+        <div class="studio-hub-card">
+          <div class="studio-hub-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">🔍</div>
+          <h3>2. SEQUA Demand &amp; Model Validation</h3>
+          <p>Evidence-led customer problem discovery, willingness-to-pay validation, pricing architecture, and reusable 15-slide master pitch pack.</p>
+          <ul class="checklist-bullet" style="margin-top: 14px; font-size: 0.88rem;">
+            <li>✓ 50+ customer interview framework</li>
+            <li>✓ Unit economics &amp; burn rate model</li>
+            <li>✓ Master pitch deck dossier</li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="business-mastery.html" class="stage-action-btn">Explore Hub 2 &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Hub 3 -->
+        <div class="studio-hub-card">
+          <div class="studio-hub-icon" style="background: rgba(40, 104, 232, 0.12); color: #2868e8;">🏢</div>
+          <h3>3. Legal Formation, DPIIT &amp; IPR</h3>
+          <p>SPICe+ MCA incorporation, DPIIT 3-year tax holiday filing, provisional patent drafting, trademark class search, and founder banking.</p>
+          <ul class="checklist-bullet" style="margin-top: 14px; font-size: 0.88rem;">
+            <li>✓ Certificate of Incorporation (CoI)</li>
+            <li>✓ Section 80-IAC tax exemption</li>
+            <li>✓ Provisional patent priority filing</li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="launch-business.html" class="stage-action-btn">Explore Hub 3 &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Hub 4 -->
+        <div class="studio-hub-card">
+          <div class="studio-hub-icon" style="background: rgba(255, 107, 53, 0.12); color: #ff6b35;">📈</div>
+          <h3>4. Funding Readiness &amp; AI Matching</h3>
+          <p>Readiness diagnostic, government grant navigation (SISFS, BIRAC), due diligence data room, and thesis-aligned angel/VC matching.</p>
+          <ul class="checklist-bullet" style="margin-top: 14px; font-size: 0.88rem;">
+            <li>✓ Funding readiness scorecard</li>
+            <li>✓ Verified investor intelligence</li>
+            <li>✓ Founder-approved introductions</li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="investor-partners.html" class="stage-action-btn">Explore Hub 4 &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Hub 5 -->
+        <div class="studio-hub-card">
+          <div class="studio-hub-icon" style="background: rgba(2, 86, 155, 0.12); color: #02569b;">👔</div>
+          <h3>5. Fractional C-Suite Support (5 Years)</h3>
+          <p>Seasoned executives embedded in your business: Fractional CFO for cash burn, CMO for growth, CTO for AI architecture, and COO for cadence.</p>
+          <ul class="checklist-bullet" style="margin-top: 14px; font-size: 0.88rem;">
+            <li>✓ Monthly strategic leadership cadence</li>
+            <li>✓ Clear decision rights &amp; KPIs</li>
+            <li>✓ Multi-year scaling governance</li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="c-suite.html" class="stage-action-btn">Explore Hub 5 &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Hub 6 -->
+        <div class="studio-hub-card">
+          <div class="studio-hub-icon" style="background: rgba(147, 51, 234, 0.12); color: #9333ea;">🏛️</div>
+          <h3>6. Global Expansion &amp; IPO Readiness</h3>
+          <p>Cross-border market entry into UAE, UK, US, and Singapore; SEBI/BSE SME listing diagnostic, restated Ind-AS audits, and strategic M&amp;A exits.</p>
+          <ul class="checklist-bullet" style="margin-top: 14px; font-size: 0.88rem;">
+            <li>✓ Country selection scorecard</li>
+            <li>✓ 180-Day SME listing roadmap</li>
+            <li>✓ Category-I Merchant Banker access</li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="global-expansion.html" class="stage-action-btn">Explore Hub 6 &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Metrics Bar -->
   <div class="metrics-strip">
@@ -285,17 +856,357 @@
     </div>
   </div>
 
+  <!-- ==========================================================================
+       NEUROSCIENCE SHOWCASE: 100 BILLION NEURONS BRAIN COGNITIVE EXPLORER
+       ========================================================================== -->
+  <section class="brain-explorer-section" id="brain-explorer">
+    <div class="brain-grid-bg"></div>
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="brain-explorer-header">
+        <span class="section-tag">COGNITIVE NEUROSCIENCE &amp; AI ARCHITECTURE</span>
+        <h2>100 Billion Neurons: <span class="text-gradient">The Brain Architecture</span></h2>
+        <p>
+          Merging ancient Indian wisdom (<em>‘सर्वे भवन्तु सुखिनः।’</em>) with evidence-based cognitive neuroscience. Discover how our 12-Dimension Psychometric Evaluation and Eye 2 I Iris Analysis decode cerebral lobes to unlock peak entrepreneurial execution and high-income tech skills.
+        </p>
+      </div>
+
+      <!-- Lobe Selector Tabs -->
+      <div class="lobe-tabs-nav">
+        <button class="lobe-tab-btn active" data-lobe="frontal">
+          <span class="lobe-color-dot" style="background: #38bdf8;"></span>
+          <span>Prefrontal Cortex (Executive &amp; Venture)</span>
+        </button>
+        <button class="lobe-tab-btn" data-lobe="temporal">
+          <span class="lobe-color-dot" style="background: #34d399;"></span>
+          <span>Temporal Lobe (EQ &amp; Leadership)</span>
+        </button>
+        <button class="lobe-tab-btn" data-lobe="parietal">
+          <span class="lobe-color-dot" style="background: #c084fc;"></span>
+          <span>Parietal Lobe (Skill Track &amp; Agility)</span>
+        </button>
+        <button class="lobe-tab-btn" data-lobe="occipital">
+          <span class="lobe-color-dot" style="background: #f472b6;"></span>
+          <span>Occipital &amp; Optical Nerve (Iris Scan)</span>
+        </button>
+        <button class="lobe-tab-btn" data-lobe="cerebellum">
+          <span class="lobe-color-dot" style="background: #fbbf24;"></span>
+          <span>Cerebellum (Business Yoga Flow)</span>
+        </button>
+      </div>
+
+      <!-- Main Explorer Interactive Grid -->
+      <div class="brain-explorer-grid">
+        
+        <!-- Left Column: Interactive Brain & Optical Conduit SVG -->
+        <div class="brain-svg-card">
+          <div class="brain-svg-wrapper">
+            <svg class="brain-interactive-svg" viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <!-- Glow Filters -->
+                <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="8" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+                <filter id="glow-orange" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="8" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+                <!-- Iris Radial Gradient -->
+                <radialGradient id="iris-glow-gradient" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.9" />
+                  <stop offset="50%" stop-color="#0284c7" stop-opacity="0.6" />
+                  <stop offset="85%" stop-color="#ff6b35" stop-opacity="0.8" />
+                  <stop offset="100%" stop-color="#060c1d" stop-opacity="1" />
+                </radialGradient>
+              </defs>
+
+              <!-- Optical Nerve Conduit Ray -->
+              <path class="optical-nerve-ray" d="M 170 290 Q 110 320 60 340" />
+
+              <!-- Eye 2 I Iris Sensor Sphere -->
+              <g class="brain-lobe-path" data-lobe="occipital" style="cursor: pointer;">
+                <circle cx="60" cy="340" r="32" fill="#060c1d" stroke="#00e5ff" stroke-width="2.5" />
+                <circle cx="60" cy="340" r="22" fill="url(#iris-glow-gradient)" stroke="#ff6b35" stroke-width="1.8" />
+                <circle cx="60" cy="340" r="8" fill="#000000" />
+                <circle cx="56" cy="336" r="3" fill="#ffffff" opacity="0.8" />
+                <text x="60" y="390" fill="#38bdf8" font-size="11" font-weight="700" text-anchor="middle" font-family="'Outfit', sans-serif">Eye 2 I Iris Sensor</text>
+                <text x="60" y="405" fill="#94a3b8" font-size="9" text-anchor="middle">Optical Nerve &bull; 100B</text>
+              </g>
+
+              <!-- Frontal / Prefrontal Lobe -->
+              <path class="brain-lobe-path active" data-lobe="frontal"
+                    d="M 280 50 C 210 50, 150 85, 120 140 C 95 185, 105 240, 140 280 C 175 305, 230 300, 260 260 C 280 235, 290 190, 310 160 C 320 145, 315 100, 280 50 Z"
+                    fill="#0284c7" stroke="#38bdf8" />
+
+              <!-- Parietal Lobe -->
+              <path class="brain-lobe-path" data-lobe="parietal"
+                    d="M 280 50 C 350 48, 420 75, 455 130 C 440 170, 400 185, 335 185 C 310 160, 320 100, 280 50 Z"
+                    fill="#8b5cf6" stroke="#c084fc" />
+
+              <!-- Occipital Lobe -->
+              <path class="brain-lobe-path" data-lobe="occipital"
+                    d="M 455 130 C 495 175, 500 230, 470 275 C 435 285, 400 260, 405 220 C 400 185, 440 170, 455 130 Z"
+                    fill="#ec4899" stroke="#f472b6" />
+
+              <!-- Temporal Lobe -->
+              <path class="brain-lobe-path" data-lobe="temporal"
+                    d="M 260 260 C 230 300, 175 305, 185 330 C 215 365, 310 365, 365 330 C 390 310, 400 260, 405 220 C 335 185, 280 235, 260 260 Z"
+                    fill="#10b981" stroke="#34d399" />
+
+              <!-- Cerebellum & Brainstem -->
+              <path class="brain-lobe-path" data-lobe="cerebellum"
+                    d="M 365 330 C 385 335, 445 330, 450 375 C 440 420, 380 425, 340 410 C 325 435, 310 440, 295 440 L 290 380 C 320 375, 345 355, 365 330 Z"
+                    fill="#f59e0b" stroke="#fbbf24" />
+
+              <!-- Synaptic Neural Circuit Lines -->
+              <g stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.2" fill="none">
+                <line x1="200" y1="160" x2="260" y2="120" class="synapse-link-line" />
+                <line x1="200" y1="160" x2="160" y2="230" class="synapse-link-line" />
+                <line x1="260" y1="120" x2="350" y2="110" class="synapse-link-line" />
+                <line x1="350" y1="110" x2="440" y2="170" class="synapse-link-line" />
+                <line x1="160" y1="230" x2="240" y2="300" class="synapse-link-line" />
+                <line x1="240" y1="300" x2="330" y2="280" class="synapse-link-line" />
+                <line x1="330" y1="280" x2="410" y2="350" class="synapse-link-line" />
+              </g>
+
+              <!-- Pulsing Synaptic Node Anchors -->
+              <circle cx="200" cy="160" r="5" fill="#38bdf8" class="synapse-node" />
+              <circle cx="260" cy="120" r="5" fill="#38bdf8" class="synapse-node" />
+              <circle cx="160" cy="230" r="5" fill="#38bdf8" class="synapse-node" />
+              <circle cx="350" cy="110" r="5" fill="#c084fc" class="synapse-node" />
+              <circle cx="440" cy="170" r="5" fill="#f472b6" class="synapse-node" />
+              <circle cx="240" cy="300" r="5" fill="#34d399" class="synapse-node" />
+              <circle cx="330" cy="280" r="5" fill="#34d399" class="synapse-node" />
+              <circle cx="410" cy="350" r="5" fill="#fbbf24" class="synapse-node" />
+
+              <!-- Lobe Labels inside Diagram -->
+              <text x="195" y="195" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle" font-family="'Outfit', sans-serif">Frontal</text>
+              <text x="365" y="145" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle" font-family="'Outfit', sans-serif">Parietal</text>
+              <text x="455" y="235" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle" font-family="'Outfit', sans-serif">Occipital</text>
+              <text x="270" y="325" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle" font-family="'Outfit', sans-serif">Temporal</text>
+              <text x="390" y="390" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" font-family="'Outfit', sans-serif">Cerebellum</text>
+            </svg>
+          </div>
+          <div style="text-align: center; margin-top: 18px; font-size: 0.85rem; color: #94a3b8;">
+            <span style="color: #38bdf8;">&#9432; Interactive Map:</span> Click any brain lobe or tab to inspect cognitive telemetry, firing frequency, and assessment linkages.
+          </div>
+        </div>
+
+        <!-- Right Column: Live Telemetry & Diagnostics Panel (Matched Height & Scrollable) -->
+        <div class="brain-telemetry-panel">
+          
+          <div class="telemetry-header">
+            <div class="telemetry-title-block">
+              <span class="telemetry-sanskrit-tag">अन्तःकरण &bull; Buddhi &amp; Sankalpa</span>
+              <h3 class="telemetry-title">Prefrontal Cortex &amp; Frontal Lobe</h3>
+            </div>
+            <div class="telemetry-hz-badge">
+              <div class="hz-value">96.4 Hz</div>
+              <div class="hz-label">Hyper-Gamma Sync</div>
+            </div>
+          </div>
+
+          <!-- Scrollable Telemetry Details Body -->
+          <div class="telemetry-scroll-body">
+            <p class="telemetry-desc">
+              The biological command center for long-term vision, strategic risk-taking, hypothesis validation, and executive composure. High synaptic activity here directly correlates with qualification for the Entrepreneurship Track (&ge;60%).
+            </p>
+
+            <!-- Associated 12 Psychometric Dimensions -->
+            <div class="telemetry-dim-section">
+              <div class="telemetry-dim-label">Associated 12-D Psychometric Dimensions:</div>
+              <div class="telemetry-tags-list">
+                <span class="dim-tag-pill"><span class="dot"></span>Problem-Solving &amp; Decision Making</span>
+                <span class="dim-tag-pill"><span class="dot"></span>Achievement Drive Analysis</span>
+                <span class="dim-tag-pill"><span class="dot"></span>Risk Tolerance Assessment</span>
+                <span class="dim-tag-pill"><span class="dot"></span>Business Acumen Measurement</span>
+                <span class="dim-tag-pill"><span class="dot"></span>Entrepreneurial Mindset Analysis</span>
+              </div>
+            </div>
+
+            <!-- Dual-Track Fit Bar -->
+            <div class="track-fit-card">
+              <div class="track-fit-header">
+                <span>Track Match Affinity:</span>
+                <span class="track-fit-label" style="color: #ff9d76;">94% Entrepreneurship Track Affinity (Score &ge; 60%)</span>
+              </div>
+              <div class="track-fit-bar-bg">
+                <div class="track-fit-bar-fill" style="width: 94%;"></div>
+              </div>
+              <div class="track-fit-note">
+                Primary biological marker for venture founders, innovation architects, and C-Suite strategists.
+              </div>
+            </div>
+
+            <!-- Optical Link info -->
+            <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-md); padding: 14px; margin-bottom: 12px; font-size: 0.85rem; color: #cbd5e1;">
+              <strong style="color: #38bdf8; display: block; margin-bottom: 4px;">Optical Nerve Conduit Link:</strong>
+              <span class="telemetry-optical-note">
+                Eye 2 I measures retinal nerve fiber thickness connecting to prefrontal dopamine pathways in &lt;60 seconds with 90&ndash;100% accuracy.
+              </span>
+            </div>
+          </div>
+
+          <!-- Actions (Fixed at bottom) -->
+          <div class="telemetry-actions">
+            <button class="btn btn-secondary btn-round telemetry-action-btn" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">
+              <span>Take 12-Dimension Assessment (&#8377;990)</span> &rarr;
+            </button>
+            <a href="iris-test.html" class="btn btn-outline-white btn-round">
+              Explore Eye 2 I Iris Test
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Brain Wave Frequency Harmonizer (Business Yoga with AI) -->
+      <div class="brainwave-section">
+        <div class="brainwave-header">
+          <div>
+            <span class="section-tag orange" style="margin-bottom: 8px;">THE SCIENCE OF BUSINESS YOGA</span>
+            <h3 style="color: #ffffff; font-size: 1.6rem; margin-top: 6px;">Live Brain Wave Frequency Harmonizer</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 0;">
+              Business Yoga with AI balances high-frequency cognitive execution with alpha-wave calm to eliminate burnout and elevate venture leadership.
+            </p>
+          </div>
+          <div class="brainwave-modes-nav">
+            <button class="brainwave-tab" data-mode="gamma">Gamma (40 Hz)</button>
+            <button class="brainwave-tab" data-mode="beta">Beta (20 Hz)</button>
+            <button class="brainwave-tab active" data-mode="alpha">Alpha (10 Hz)</button>
+            <button class="brainwave-tab" data-mode="theta">Theta (6 Hz)</button>
+          </div>
+        </div>
+
+        <div class="brainwave-canvas-wrapper">
+          <canvas id="brainwave-canvas"></canvas>
+          <div class="brainwave-canvas-overlay">Alpha (10 Hz) - Business Yoga State &amp; Mind-Machine Flow</div>
+        </div>
+
+        <div class="brainwave-explanation-grid">
+          <div class="brainwave-info-card">
+            <strong>&#9889; High-Frequency Synthesis (Gamma &amp; Beta)</strong>
+            <p>Activates during pitch presentations, rapid algorithmic problem-solving, and decisive seed-stage pivots.</p>
+          </div>
+          <div class="brainwave-info-card" style="border-color: rgba(0, 188, 212, 0.3);">
+            <strong style="color: #38bdf8;">&#129496; Business Yoga Coherence (Alpha Flow &bull; 10 Hz)</strong>
+            <p>The sweet spot where AI synthesis meets Vedic equanimity (<em>समत्वं योग उच्यते</em>) for sustainable scale.</p>
+          </div>
+          <div class="brainwave-info-card">
+            <strong>&#127775; Pre-Natal Potential (Theta &bull; 6 Hz)</strong>
+            <p>Unlocks pre-natal innate talent and deep creative vision mapped non-invasively through Eye 2 I Iris Analysis.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 60-Second Cognitive Mini-Scan Interactive Card -->
+      <div class="cognitive-miniscan-card">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto 28px auto;">
+          <span class="section-tag" style="background: rgba(255, 107, 53, 0.2); border-color: rgba(255, 107, 53, 0.4); color: #ff9d76;">INSTANT COGNITIVE PULSE</span>
+          <h3 style="color: #ffffff; font-size: 1.7rem; margin-top: 8px;">60-Second Cognitive Strengths Mini-Scan</h3>
+          <p style="color: #cbd5e1; font-size: 0.95rem;">Answer 3 rapid questions to discover your brain's natural bias between the Entrepreneurship Track and Skill Development Track.</p>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="miniscan-step active" data-step="1">
+          <div class="miniscan-question">1. When faced with an ambiguous business challenge, your brain instinctively:</div>
+          <div class="miniscan-options-grid">
+            <button class="miniscan-option-btn" data-type="entrepreneur">
+              <span>&#128640;</span>
+              <div>
+                <strong>Architects a New Venture / Solution</strong>
+                <div style="font-size: 0.8rem; color: #94a3b8;">Embraces risk, rallies resources, and drives strategic execution.</div>
+              </div>
+            </button>
+            <button class="miniscan-option-btn" data-type="skill">
+              <span>&#9881;</span>
+              <div>
+                <strong>Applies Deep Technical Rigor &amp; AI Tools</strong>
+                <div style="font-size: 0.8rem; color: #94a3b8;">Analyzes systems, automates workflow, and masters tools.</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="miniscan-step" data-step="2">
+          <div class="miniscan-question">2. Under high-stakes market volatility, your neurological coping style is:</div>
+          <div class="miniscan-options-grid">
+            <button class="miniscan-option-btn" data-type="entrepreneur">
+              <span>&#129504;</span>
+              <div>
+                <strong>Calculated Calm &amp; Bold Pivot</strong>
+                <div style="font-size: 0.8rem; color: #94a3b8;">Sees opportunity in chaos and takes decisive ownership.</div>
+              </div>
+            </button>
+            <button class="miniscan-option-btn" data-type="skill">
+              <span>&#128202;</span>
+              <div>
+                <strong>Precision Analytics &amp; Process Optimization</strong>
+                <div style="font-size: 0.8rem; color: #94a3b8;">Stabilizes operations with data-driven systemic adjustments.</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="miniscan-step" data-step="3">
+          <div class="miniscan-question">3. What is your primary 1-year cognitive aspiration?</div>
+          <div class="miniscan-options-grid">
+            <button class="miniscan-option-btn" data-type="entrepreneur">
+              <span>&#127942;</span>
+              <div>
+                <strong>Found a Startup &amp; Win $100k Global Innovation Award</strong>
+                <div style="font-size: 0.8rem; color: #94a3b8;">Access Fractional C-Suite, seed incubation, and investor syndicate.</div>
+              </div>
+            </button>
+            <button class="miniscan-option-btn" data-type="skill">
+              <span>&#128187;</span>
+              <div>
+                <strong>Master Industry 5.0 Skills &amp; Secure High-Growth Corporate Roles</strong>
+                <div style="font-size: 0.8rem; color: #94a3b8;">AI/ML, Full-Stack, UX/UI with direct corporate placement linkages.</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Result Step -->
+        <div class="miniscan-step" data-step="result">
+          <div class="miniscan-result-box">
+            <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; color: #38bdf8; font-weight: 700;">Your Cognitive Profile Preview</div>
+            <div class="miniscan-score-display" style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: #ffffff; margin: 10px 0;">88%</div>
+            <div class="miniscan-track-display" style="font-size: 1.3rem; margin-bottom: 8px;"></div>
+            <div class="miniscan-lobe-display" style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 24px;"></div>
+            <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+              <button class="btn btn-secondary btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">
+                <span>Unlock Official 12-Dimension Evaluation (&#8377;990)</span> &rarr;
+              </button>
+              <button class="btn btn-outline-white btn-round miniscan-restart-btn">
+                Retake Quick Scan
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- Section: Discover Your Strengths & 12 Dimensions -->
-  <section class="section">
+  <section class="section dimensions-section">
     <div class="container">
       <div class="dimensions-grid">
-        <div>
+        <div class="dimensions-content">
           <span class="section-tag">Scientific Self-Discovery</span>
           <h2>Discover Your Strengths, <span class="text-gradient">Shape Your Future</span></h2>
-          <p style="font-size: 1.05rem; color: var(--gray-600); margin-top: 14px;">
+          <p style="font-size: 0.98rem; color: var(--gray-600); margin-top: 10px; margin-bottom: 8px; line-height: 1.5;">
             At <strong>IGNITING BUSINESS YOGA WITH AI</strong>, our mission is to empower individuals to uncover innate strengths through evidence-based psychometric tests and ignite entrepreneurial passion through our Global Business Innovation Awards.
           </p>
-          <p style="color: var(--gray-600);">
+          <p style="color: var(--gray-600); font-size: 0.92rem; margin-bottom: 0; line-height: 1.5;">
             Through our 12-dimension psychometric evaluation and AI-powered Eye 2 I iris analysis, we guide students, professionals, and aspiring founders to choose the optimal pathway for lifelong personal and professional growth with full handholding.
           </p>
 
@@ -315,28 +1226,174 @@
             <div class="dimension-badge"><span class="dim-num">12</span> Organizational Skills</div>
           </div>
 
-          <div style="margin-top: 28px;">
+          <div style="margin-top: 18px;">
             <a href="psychometric-12d.html" class="btn btn-primary btn-round">Learn More About 12 Dimensions &rarr;</a>
           </div>
         </div>
 
-        <div>
-          <div style="position: relative; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); border: 4px solid #ffffff;">
-            <img src="assets/images/male-therapist-listening-to-his-female-patent-comp-2024-11-18-17-38-04-utc.webp-1.png" alt="Psychologist and student consultation" style="width: 100%; height: 380px; object-fit: cover;">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, rgba(10,17,40,0.9) 0%, rgba(10,17,40,0) 100%); padding: 30px; color: #ffffff;">
-              <span style="background: var(--secondary); padding: 4px 12px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700;">AI + Human Guidance</span>
-              <h3 style="color: #ffffff; margin-top: 8px; font-size: 1.35rem;">World’s Largest AI-Powered Venture Studio</h3>
-              <p style="font-size: 0.9rem; color: var(--gray-300); margin-bottom: 0;">Combining scientific assessments, expert CXO mentorship, and career placement under one roof.</p>
+        <div class="dimensions-visual">
+          <!-- Executive Graphical Venture Studio Cockpit (No Photo, 100% Animated Graphics) -->
+          <div class="venture-cockpit-card">
+            <!-- Top Cockpit Status Bar -->
+            <div class="cockpit-top-bar">
+              <div class="cockpit-status-tag">
+                <span class="cockpit-live-dot"></span>
+                <span>QUANTUM STUDIO MATRIX V5.0</span>
+              </div>
+              <div class="cockpit-track-tag">
+                <span>AI + HUMAN CO-PILOT</span>
+              </div>
+            </div>
+
+            <!-- Animated Holographic Radar Stage -->
+            <div class="cockpit-radar-stage">
+              <!-- Floating HUD Telemetry Chips -->
+              <div class="cockpit-hud-chip chip-top-left">
+                <span class="hud-dot cyan"></span>
+                <span>99.4% AI Match Precision</span>
+              </div>
+              <div class="cockpit-hud-chip chip-top-right">
+                <span class="hud-dot orange"></span>
+                <span>12-D Constellation Active</span>
+              </div>
+
+              <!-- Animated Vector Radar & Synaptic Constellation -->
+              <svg class="venture-radar-svg" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <!-- Radial Gradients -->
+                  <radialGradient id="cockpit-core-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.95" />
+                    <stop offset="45%" stop-color="#0284c7" stop-opacity="0.55" />
+                    <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+                  </radialGradient>
+                  <radialGradient id="cockpit-sweep-grad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="rgba(0, 229, 255, 0.4)" />
+                    <stop offset="70%" stop-color="rgba(2, 132, 199, 0.12)" />
+                    <stop offset="100%" stop-color="transparent" />
+                  </radialGradient>
+                  <!-- Glow Filter -->
+                  <filter id="cockpit-neon-glow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="5" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+
+                <!-- Background Radar Target Rings & Crosshairs -->
+                <g opacity="0.4" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1" fill="none">
+                  <circle cx="250" cy="150" r="38" class="radar-pulse-ring-1" />
+                  <circle cx="250" cy="150" r="76" class="radar-pulse-ring-2" />
+                  <circle cx="250" cy="150" r="115" stroke-dasharray="6, 6" />
+                  <circle cx="250" cy="150" r="138" stroke="rgba(0, 188, 212, 0.3)" />
+                  <!-- Crosshairs -->
+                  <line x1="250" y1="12" x2="250" y2="288" stroke-dasharray="4, 4" stroke="rgba(56, 189, 248, 0.25)" />
+                  <line x1="112" y1="150" x2="388" y2="150" stroke-dasharray="4, 4" stroke="rgba(56, 189, 248, 0.25)" />
+                </g>
+
+                <!-- 360-Degree Rotating Radar Scanner Beam -->
+                <g class="radar-scanner-sweep">
+                  <path d="M 250 150 L 250 12 A 138 138 0 0 1 348 52 Z" fill="url(#cockpit-sweep-grad)" />
+                  <line x1="250" y1="150" x2="348" y2="52" stroke="#00e5ff" stroke-width="2.2" filter="url(#cockpit-neon-glow)" />
+                </g>
+
+                <!-- 12 Synaptic Node Laser Conduits -->
+                <g stroke="rgba(0, 229, 255, 0.32)" stroke-width="1.2" stroke-dasharray="4, 4" class="laser-conduits">
+                  <line x1="250" y1="150" x2="250" y2="36" />
+                  <line x1="250" y1="150" x2="308" y2="52" />
+                  <line x1="250" y1="150" x2="350" y2="94" />
+                  <line x1="250" y1="150" x2="365" y2="150" />
+                  <line x1="250" y1="150" x2="350" y2="206" />
+                  <line x1="250" y1="150" x2="308" y2="248" />
+                  <line x1="250" y1="150" x2="250" y2="264" />
+                  <line x1="250" y1="150" x2="192" y2="248" />
+                  <line x1="250" y1="150" x2="150" y2="206" />
+                  <line x1="250" y1="150" x2="135" y2="150" />
+                  <line x1="250" y1="150" x2="150" y2="94" />
+                  <line x1="250" y1="150" x2="192" y2="52" />
+                </g>
+
+                <!-- 12 Dimension Orbit Nodes -->
+                <circle cx="250" cy="36" r="6" fill="#38bdf8" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="308" cy="52" r="5" fill="#ff6b35" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="350" cy="94" r="5.5" fill="#00e5ff" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="365" cy="150" r="6" fill="#a855f7" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="350" cy="206" r="5" fill="#10b981" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="308" cy="248" r="6" fill="#f59e0b" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="250" cy="264" r="5.5" fill="#ec4899" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="192" cy="248" r="5" fill="#0284c7" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="150" cy="206" r="5.5" fill="#f97316" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="135" cy="150" r="6" fill="#8b5cf6" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="150" cy="94" r="5" fill="#06b6d4" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+                <circle cx="192" cy="52" r="5.5" fill="#34d399" filter="url(#cockpit-neon-glow)" class="radar-node-pulse" />
+
+                <!-- Center Quantum Studio Core Orb -->
+                <circle cx="250" cy="150" r="34" fill="url(#cockpit-core-glow)" />
+                <circle cx="250" cy="150" r="19" fill="#060c1d" stroke="#00e5ff" stroke-width="2.5" filter="url(#cockpit-neon-glow)" />
+                <text x="250" y="155" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="800" font-family="'Outfit', sans-serif">AI ⚡</text>
+              </svg>
+
+              <!-- Floating Bottom Chip -->
+              <div class="cockpit-hud-chip chip-bottom">
+                <span class="hud-dot emerald"></span>
+                <span>World’s Largest AI-Powered Venture Studio</span>
+              </div>
             </div>
           </div>
-          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 16px;">
-            <div style="background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 16px;">
-              <strong style="color: var(--primary); font-size: 1.1rem; display: block;">End-to-End Handholding</strong>
-              <span style="font-size: 0.85rem; color: var(--gray-500);">From psychometrics to seed funding &amp; incubation.</span>
+
+          <!-- Graphical Biometric Studio Telemetry Matrix Card -->
+          <div class="dimensions-matrix-card">
+            <div class="matrix-card-header">
+              <span class="matrix-title">Biometric &amp; Cognitive Studio Matrix</span>
+              <span class="matrix-status"><span class="matrix-dot"></span> LIVE SYNC</span>
             </div>
-            <div style="background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 16px;">
-              <strong style="color: var(--secondary); font-size: 1.1rem; display: block;">Society 5.0 Vision</strong>
-              <span style="font-size: 0.85rem; color: var(--gray-500);">Preparing youth for the global innovation economy.</span>
+            
+            <div class="matrix-bars-grid">
+              <div class="matrix-bar-item">
+                <div class="matrix-bar-info">
+                  <span>Cognitive EQ &amp; Leadership Affinity</span>
+                  <strong>94%</strong>
+                </div>
+                <div class="matrix-progress-track">
+                  <div class="matrix-progress-fill fill-cyan" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <div class="matrix-bar-item">
+                <div class="matrix-bar-info">
+                  <span>Venture Innovation &amp; Agility</span>
+                  <strong>91%</strong>
+                </div>
+                <div class="matrix-progress-track">
+                  <div class="matrix-progress-fill fill-orange" style="width: 91%;"></div>
+                </div>
+              </div>
+
+              <div class="matrix-bar-item">
+                <div class="matrix-bar-info">
+                  <span>Execution &amp; Risk Calibration</span>
+                  <strong>88%</strong>
+                </div>
+                <div class="matrix-progress-track">
+                  <div class="matrix-progress-fill fill-green" style="width: 88%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dual Feature Impact Cards -->
+          <div class="dimensions-feature-cards">
+            <div class="dimensions-feature-card">
+              <div class="feature-icon-wrap" style="background: rgba(2, 86, 155, 0.12); color: var(--primary);">&#128640;</div>
+              <div>
+                <strong>End-to-End Handholding</strong>
+                <span>From psychometrics to prototype incubation &amp; seed funding.</span>
+              </div>
+            </div>
+            <div class="dimensions-feature-card">
+              <div class="feature-icon-wrap" style="background: rgba(255, 107, 53, 0.12); color: var(--secondary);">&#127760;</div>
+              <div>
+                <strong>Society 5.0 Vision</strong>
+                <span>Preparing youth for the global trillion-dollar innovation economy.</span>
+              </div>
             </div>
           </div>
         </div>
@@ -481,72 +1538,120 @@
 
       <div class="impact-grid">
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#127891;</span>
+            <span class="impact-card-badge">Students</span>
+          </div>
           <div class="impact-number animate-counter" data-target="3680" data-suffix="+">3,680+</div>
           <div class="impact-title">Students Sensitized</div>
           <div class="impact-desc">Empowered through hands-on workshops, psychometric screenings, and career clarity sessions.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128218;</span>
+            <span class="impact-card-badge">Programs</span>
+          </div>
           <div class="impact-number animate-counter" data-target="42">42</div>
           <div class="impact-title">Programs Organized</div>
           <div class="impact-desc">Structured skill and entrepreneurship initiatives organized across schools and colleges.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128161;</span>
+            <span class="impact-card-badge">SSIP 2.0</span>
+          </div>
           <div class="impact-number animate-counter" data-target="134" data-suffix=" POC">134 POC</div>
           <div class="impact-title">Prototypes Supported</div>
           <div class="impact-desc">Mentored and funded under Gujarat Student Startup &amp; Innovation Policy (SSIP 2.0).</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128220;</span>
+            <span class="impact-card-badge orange">IPR / Patent</span>
+          </div>
           <div class="impact-number gold animate-counter" data-target="56" data-suffix=" Patents">56 Patents</div>
           <div class="impact-title">Proposals Supported</div>
           <div class="impact-desc">Assisting young inventors in patent filing, IPR commercialization, and copyright protection.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128640;</span>
+            <span class="impact-card-badge orange">Ventures</span>
+          </div>
           <div class="impact-number orange animate-counter" data-target="38">38</div>
           <div class="impact-title">Startups Launched</div>
           <div class="impact-desc">Transforming ideas into incorporated actionable commercial ventures with C-Suite mentoring.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128737;&#65039;</span>
+            <span class="impact-card-badge gold">National #1</span>
+          </div>
           <div class="impact-number gold animate-counter" data-target="1" data-prefix="# ">1 National Award</div>
           <div class="impact-title">Recognized by DRDO</div>
           <div class="impact-desc">Concept assemble drone innovation recognized and honored by Defense Research and Development Organisation.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#129302;</span>
+            <span class="impact-card-badge cyan">State #1</span>
+          </div>
           <div class="impact-number animate-counter" data-target="1" data-prefix="# ">1 State Award</div>
           <div class="impact-title">Robotics Competition</div>
           <div class="impact-desc">Prestigious winners at Gujarat State-Level Robotics Competition for autonomous systems.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128101;</span>
+            <span class="impact-card-badge">Faculty</span>
+          </div>
           <div class="impact-number animate-counter" data-target="22" data-suffix="+">22+</div>
           <div class="impact-title">Trainers &amp; Mentors</div>
           <div class="impact-desc">Veteran educators, CXOs, psychologists, and chartered accountants actively mentoring students.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128188;</span>
+            <span class="impact-card-badge green">Placement</span>
+          </div>
           <div class="impact-number animate-counter" data-target="128" data-suffix="+">128+</div>
           <div class="impact-title">Corporate Placements</div>
           <div class="impact-desc">Direct corporate hiring achieved through industry-academia tie-ups and hands-on skill training.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#127942;</span>
+            <span class="impact-card-badge gold">Featured</span>
+          </div>
           <div class="impact-number gold animate-counter" data-target="2" data-suffix=" POC">2 POC</div>
           <div class="impact-title">Vibrant Gujarat Book</div>
           <div class="impact-desc">Selected and featured in the official Coffee Table Book of Vibrant Gujarat 2019 (under SSIP 2.0).</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#129309;</span>
+            <span class="impact-card-badge cyan">Academia</span>
+          </div>
           <div class="impact-number animate-counter" data-target="14" data-suffix=" MOUs">14 MOUs</div>
           <div class="impact-title">Universities &amp; Associations</div>
           <div class="impact-desc">10 Universities and 4 major Industry Associations actively engaged with our ecosystem.</div>
         </div>
 
         <div class="impact-card">
+          <div class="impact-card-top">
+            <span class="impact-card-icon">&#128214;</span>
+            <span class="impact-card-badge">Readers</span>
+          </div>
           <div class="impact-number animate-counter" data-target="4200" data-suffix="+">4,200+</div>
           <div class="impact-title">Book Readers &amp; Followers</div>
           <div class="impact-desc">Active readership across our publications on AI, Business Yoga, and Society 5.0.</div>
@@ -605,20 +1710,20 @@
         <!-- Pathway 1 -->
         <div class="pathway-card">
           <div class="pathway-img-wrap">
-            <img src="assets/images/love-the-mind-1.webp" alt="Individual Assessment" loading="lazy">
+            <img src="assets/images/competence-skill-personal-development-concept-2.png" alt="Founder Aptitude Benchmarking and Cognitive Evaluation" loading="lazy">
           </div>
           <div class="pathway-body">
-            <span class="pathway-score-badge score-blue">Comprehensive Baseline</span>
-            <h3>1. Individual Assessment</h3>
-            <p>One-on-one scientific evaluation evaluating 12 key dimensions of emotional intelligence, learning agility, and career readiness to eliminate uncertainty.</p>
-            <button class="btn btn-outline btn-sm btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">Learn More &rarr;</button>
+            <span class="pathway-score-badge score-blue">Scientific Talent Baseline</span>
+            <h3>1. Scientific Talent Discovery</h3>
+            <p>Scientific evaluation benchmarking 12 key dimensions of emotional intelligence, learning agility, and entrepreneurial execution readiness.</p>
+            <button class="btn btn-outline btn-sm btn-round" data-open-modal data-test-name="12-Dimension Psychometric Evaluation Test">Discover Your Aptitude &rarr;</button>
           </div>
         </div>
 
         <!-- Pathway 2 -->
         <div class="pathway-card">
           <div class="pathway-img-wrap">
-            <img src="assets/images/love-yourself-1.webp" alt="Entrepreneurship Pathway" loading="lazy">
+            <img src="assets/images/business-people-clapping-hands-board-room-meeting-1.png" alt="Entrepreneurship Pathway - Founders Boardroom & Seed Capital" loading="lazy">
           </div>
           <div class="pathway-body">
             <span class="pathway-score-badge score-green">Achievers Scoring &ge; 60%</span>
@@ -631,7 +1736,7 @@
         <!-- Pathway 3 -->
         <div class="pathway-card">
           <div class="pathway-img-wrap">
-            <img src="assets/images/help-love.webp" alt="Skill Development Pathway" loading="lazy">
+            <img src="assets/images/cheerful-indian-asian-young-group-college-students-1.png" alt="Skill Development Pathway - Tech Skills Training" loading="lazy">
           </div>
           <div class="pathway-body">
             <span class="pathway-score-badge score-purple">Learners Scoring &lt; 60%</span>
@@ -873,172 +1978,57 @@
     </div>
   </section>
 
-  <!-- Interactive Contact Section & Offices -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <div class="contact-section-grid">
-        <div class="contact-form-card">
-          <span class="section-tag">Quick Inquiry</span>
-          <h2 style="font-size: 1.85rem; margin-bottom: 8px;">We're Listening &ndash; Reach Out Anytime</h2>
-          <p style="color: var(--gray-500); margin-bottom: 24px;">Start your journey toward self-discovery, startup growth, and skill enhancement.</p>
 
-          <form class="contact-form-element">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label">Full Name <span class="req">*</span></label>
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label">Phone Number <span class="req">*</span></label>
-                <input type="tel" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label">Email Address <span class="req">*</span></label>
-                <input type="email" name="email" class="form-control" placeholder="you@domain.com" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label">Category <span class="req">*</span></label>
-                <select name="category" class="form-control" required>
-                  <option value="">-- Select Choice --</option>
-                  <option value="Student">Student</option>
-                  <option value="Investor">Investor</option>
-                  <option value="Social Influencer">Social Influencer</option>
-                  <option value="Trainer">Trainer / Mentor</option>
-                  <option value="Content Creator">Content Creator</option>
-                  <option value="Education Expert">Education Expert</option>
-                  <option value="Humanitarian">Humanitarian</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">How Can We Help? <span class="req">*</span></label>
-              <textarea name="message" class="form-control" placeholder="Describe your questions regarding psychometrics, awards, or venture studio..." required></textarea>
-            </div>
-
-            <div class="form-check">
-              <input type="checkbox" id="terms-agree" required checked>
-              <label for="terms-agree">I agree to the privacy policy and consent to being contacted by IgniteBiz AI experts.</label>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-round" style="margin-top: 20px; width: 100%;">
-              <span>Submit Inquiry</span> &rarr;
-            </button>
-          </form>
-        </div>
-
-        <div>
-          <span class="section-tag orange">Official Headquarters</span>
-          <h2 style="font-size: 1.85rem; margin-bottom: 20px;">Offices &amp; Direct Linkages</h2>
-
-          <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); margin-bottom: 20px;">
-            <h4 style="color: var(--primary); margin-bottom: 8px;">Corporate Office (Gujarat)</h4>
-            <p style="color: var(--gray-600); font-size: 0.95rem; margin-bottom: 0;">
-              7, Nirav Park, Opp. ICICI Bank, Sevashram Road, Bharuch &ndash; 392001, Gujarat, India.
-            </p>
-          </div>
-
-          <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); margin-bottom: 20px;">
-            <h4 style="color: var(--secondary); margin-bottom: 8px;">Registered Office (Mumbai)</h4>
-            <p style="color: var(--gray-600); font-size: 0.95rem; margin-bottom: 0;">
-              1 Goswami Nivas, Opp. IIT Main Gate, Powai, Mumbai &ndash; 400076, Maharashtra, India.
-            </p>
-          </div>
-
-          <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 24px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm);">
-            <h4 style="margin-bottom: 12px;">Contact Information</h4>
-            <p style="margin-bottom: 8px; font-size: 0.95rem;">
-              <strong>Direct Phone:</strong> <a href="tel:+919224185764" style="color: var(--primary);">+91 92241 85764</a> / <a href="tel:+919737311555" style="color: var(--primary);">+91 97373 11555</a>
-            </p>
-            <p style="margin-bottom: 8px; font-size: 0.95rem;">
-              <strong>Official Email:</strong> <a href="mailto:admin@ignitebizai.com" style="color: var(--primary);">admin@ignitebizai.com</a>
-            </p>
-            <p style="margin-bottom: 0; font-size: 0.85rem; color: var(--gray-500);">
-              An Initiative under CSR by Excellent Infrastructure Pvt. Ltd. Associated with Swavlambi Bharat Abhiyan &amp; Vivekananda Youth Connect.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Site Footer -->
-  <footer class="site-footer">
+      <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand-logo" style="margin-bottom: 12px;">
-            <img src="assets/images/logo.webp" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'" style="height: 48px; filter: brightness(1.1);">
-            <span style="font-weight: 800; font-size: 1.35rem; color: #ffffff;">IGNITEBIZ AI</span>
+            <img src="assets/images/logo.webp?v=5.2" alt="IgniteBiz AI Logo" onerror="this.src='assets/images/logo-resolace.webp'" style="height: 40px; filter: brightness(1.1);">
+            <span style="font-weight: 800; font-size: 1.3rem; color: #ffffff;">IGNITEBIZ AI</span>
           </div>
-          <p>
-            World's largest AI-powered venture studio for talent transformation, entrepreneurship, and skill development. Preparing human capital for Society 5.0 and Vision 2030.
-          </p>
-          <div style="display: flex; gap: 12px;">
-            <a href="https://pt.yotopper.co.in/app/" target="_blank" rel="noopener" class="btn btn-outline-white btn-sm btn-round">Take Test Portal</a>
-            <a href="about.html" class="btn btn-secondary btn-sm btn-round">About Us</a>
-          </div>
+          <p>World's largest AI-powered Digital Venture Studio initiative aimed at transforming potential from first idea to global IPO enterprise.</p>
         </div>
-
         <div class="footer-col">
-          <h4>Navigation</h4>
+          <h4>Venture Hubs</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us &amp; Co-Founders</a></li>
-            <li><a href="psychometric-12d.html">12-Dimension Evaluation</a></li>
-            <li><a href="iris-test.html">Eye 2 I Iris Analysis</a></li>
-            <li><a href="awards.html">Global Innovation Awards</a></li>
-            <li><a href="investor-partners.html">Investor Partners</a></li>
+            <li><a href="about.html">About &amp; Ecosystem</a></li>
+            <li><a href="psychometric-12d.html">Discover Yourself</a></li>
+            <li><a href="business-mastery.html">Build Your Startup</a></li>
+            <li><a href="launch-business.html">Launch Your Business</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
-          <h4>Programs</h4>
+          <h4>Scale &amp; Capital</h4>
           <ul class="footer-links">
-            <li><a href="c-suite.html">C-Suite / CXO Services</a></li>
-            <li><a href="business-mastery.html">Business Mastery with AI</a></li>
-            <li><a href="venture-architect.html">Venture Architect Strategist</a></li>
-            <li><a href="focus-domain.html">Focus Domain Skill Track</a></li>
-            <li><a href="ai-life-manager.html">AI Life Manager Course</a></li>
-            <li><a href="ai-general-workshop.html">Agentic AI General Workshop</a></li>
+            <li><a href="investor-partners.html">Funding &amp; Investors</a></li>
+            <li><a href="c-suite.html">Digital CXO Services</a></li>
+            <li><a href="global-expansion.html">Global Expansion</a></li>
+            <li><a href="ipo-exits.html">IPO &amp; Strategic Exits</a></li>
+            <li><a href="institutional-partners.html">Institutional Partners</a></li>
+            <li><a href="awards.html">Global Innovation Awards</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
-          <h4>Contact &amp; Offices</h4>
-          <ul class="contact-info-list">
-            <li>
-              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              <span>7, Nirav Park, Opp. ICICI Bank, Sevashram Road, Bharuch, Gujarat, India</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              <span>1 Goswami Nivas, Opp. IIT Main Gate, Powai, Mumbai, Maharashtra, India</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              <span>admin@ignitebizai.com</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-              <span>+91 92241 85764 / +91 97373 11555</span>
-            </li>
-          </ul>
+          <h4>Headquarters</h4>
+          <p style="font-size: 0.88rem; color: var(--gray-400); margin-bottom: 8px;">
+            <strong>Corporate:</strong> 7, Nirav Park, Opp. ICICI Bank, Sevashram Road, Bharuch, Gujarat.
+          </p>
+          <p style="font-size: 0.88rem; color: var(--gray-400);">
+            <strong>Registered:</strong> 1 Goswami Nivas, Opp. IIT Main Gate, Powai, Mumbai.
+          </p>
+          <p style="font-size: 0.88rem; color: var(--gray-400); margin-top: 8px;">
+            <strong>Phone:</strong> +91 92241 85764 / +91 97373 11555
+          </p>
         </div>
       </div>
-
       <div class="footer-bottom">
         <div class="container">
           <div>Copyright &copy; 2026 Excellent Infrastructure Pvt. Ltd. All Rights Reserved.</div>
-          <div style="display: flex; gap: 16px;">
-            <a href="contact.html">Privacy Policy</a>
-            <a href="contact.html">Terms of Service</a>
-            <a href="contact.html">Support</a>
-          </div>
         </div>
       </div>
     </div>
@@ -1102,7 +2092,13 @@
     </div>
   </div>
 
+  <!-- Floating Neuro Quick Navigation Pill -->
+  <a href="#brain-explorer" class="floating-neuro-pill" title="Explore 100 Billion Neurons Architecture">
+    <span class="pill-brain-icon">🧠</span>
+    <span>Brain Explorer</span>
+  </a>
+
   <!-- JavaScript -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=5.2"></script>
 </body>
 </html>

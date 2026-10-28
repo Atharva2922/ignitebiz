@@ -13,3 +13,10 @@ ENV/
 .DS_Store
 Thumbs.db
 *.bak
+
+# Scratch and debug files
+scratch/
+scratch_*.jpg
+css/backup_*.css
+css/reconstruct_*.css
+css/test_style.css
